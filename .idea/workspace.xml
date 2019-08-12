@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a8efd17-a7b1-49a2-ab33-7dd7fbed7df2" name="Default Changelist" comment="" />
+    <list default="true" id="7a8efd17-a7b1-49a2-ab33-7dd7fbed7df2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usage-retail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/usage-retail.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -46,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/usage-retail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="199" selection-start-line="199" selection-end-line="199" />
+            <state relative-caret-position="367">
+              <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
             </state>
           </provider>
         </entry>
@@ -283,12 +286,12 @@
       <workItem from="1565538463170" duration="14706000" />
       <workItem from="1565559556775" duration="67000" />
       <workItem from="1565559630892" duration="3878000" />
-      <workItem from="1565563526000" duration="2869000" />
+      <workItem from="1565563526000" duration="3719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45739000" />
+    <option name="totallyTimeSpent" value="46589000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -315,9 +318,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49966952" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5009914" side_tool="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4990086" visible="true" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -512,8 +515,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/usage-retail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="199" selection-start-line="199" selection-end-line="199" />
+        <state relative-caret-position="367">
+          <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
         </state>
       </provider>
     </entry>
