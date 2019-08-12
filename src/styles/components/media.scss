@@ -215,8 +215,8 @@
   .section-contacts {
     margin-top: 150px;
   }
-  .desktop-only {
-    display: block!important;
+  .mobile-only {
+    display: none!important;
   }
   .header-desktop {
     display: flex;
