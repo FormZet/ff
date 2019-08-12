@@ -109,32 +109,33 @@
         </div>
     </div>
     <div class="section-portfolio-features" style="position: relative">
-        <div class="container videoflex" style=" margin-left: 190px;">
-            <div id="light">
-                <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
-                <video id="VisaChipCardVideo" width="600" controls>
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                    <!--Browser does not support <video> tag -->
-                </video>
-            </div>
+        <div class="container videoflex">
+        <div>
+            <div id="video_pop" onclick="onPopClick()"></div>
+            <video width="30%" poster="./assets/images/product-bg-5.jpg"
+                   onclick="onVideoClick('./assets/images/videoplayback.mp4');">
 
-            <div id="fade" onClick="lightbox_close();"></div>
+            </video>
+            <div id="video_pop" onclick="onPopClick()"></div>
+            <video width="30%" poster="./assets/images/product-bg-5.jpg"
+                   onclick="onVideoClick('./assets/images/videoplayback.mp4');">
 
-            <div>
-                <a href="#" onclick="lightbox_open();"><img src="./assets/images/man-with-a-tablet.jpg">    </a>
-            </div>
-            <div>
-                <a href="#" onclick="lightbox_open();"><img src="./assets/images/man-with-a-tablet.jpg">    </a>
-            </div>
-            <div>
-                <a href="#" onclick="lightbox_open();"><img src="./assets/images/man-with-a-tablet.jpg">    </a>
-            </div>
-            <div>
-                <a href="#" onclick="lightbox_open();"><img src="./assets/images/man-with-a-tablet.jpg">    </a>
-            </div>
-
+            </video>
 
         </div>
+            <div>
+                <div id="video_pop" onclick="onPopClick()"></div>
+                <video width="30%" poster="./assets/images/product-bg-5.jpg"
+                       onclick="onVideoClick('./assets/images/videoplayback.mp4');">
+
+                </video>
+                <div id="video_pop" onclick="onPopClick()"></div>
+                <video width="30%" poster="./assets/images/product-bg-5.jpg"
+                       onclick="onVideoClick('./assets/images/videoplayback.mp4');">
+
+                </video>
+
+            </div>
         </div>
     </div>
 
