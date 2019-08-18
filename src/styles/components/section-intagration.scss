@@ -26,24 +26,29 @@
           margin: 0;
         }
       }
+      a{
+        display: block;
+        height: 100%;
+        text-align: center;
+      }
     }
     .product10 {
-      background-image: url("../images/product-bg-10.jpg");
+      background-image: url("../images/int1.jpg");
     }
     .product11 {
-      background-image: url("../images/product-bg-11.jpg");
+      background-image: url("../images/int2.jpg");
     }
     .product12 {
-      background-image: url("../images/product-bg-12.jpg");
+      background-image: url("../images/int3jpg");
     }
     .product13 {
-      background-image: url("../images/product-bg-13.jpg");
+      background-image: url("../images/int3.jpg");
     }
     .product14 {
-      background-image: url("../images/product-bg-15jpg");
+      background-image: url("../images/int5.jpg");
     }
     .product15 {
-      background-image: url("../images/product-bg-15.jpg");
+      background-image: url("../images/int6.jpg");
     }
   }
 }

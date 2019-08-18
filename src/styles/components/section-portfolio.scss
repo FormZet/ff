@@ -21,8 +21,9 @@
   .left-part {
     .video {
       video {
-        width: 300px;
-        height: 250px;
+
+
+        width: 75%;
         display: block;
         margin: 0 auto;
       }
@@ -64,12 +65,18 @@
       text-align: center;
     }
   }
+  .dottsportfolio{
+    display: none;
+  }
   .right-part {
-    background-color: #5f6a71;
+    background-color: #FFFFFF;
     padding: 20px 0;
     p {
       text-align: center;
-      color: white;
+      color:#68747c;
+      padding: 5px 15px;
+      font-weight: lighter;
+      background-color:white;
     }
     &__image-container {
       text-align: center;
@@ -81,29 +88,34 @@
   }
 }
 
-.section-portfolio-features img{
-  width: 560px;
-}
+
 .videoflex{
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+
       div{
         display: flex;
-        justify-content: space-around;
-        margin-bottom: 25px;
-        margin-top: 5px;
+        flex-direction: column;
+
       }
 
 }
+.videoCol{
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+  height: 50vh;
 
+}
 #video_pop {
   z-index: 9999;
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 100em;
+  width: 100vw;
   height: 100vh;
   background: rgba(0,0,0,0.5);
   display: none;
@@ -118,4 +130,70 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
+}
+.videoBlank{
+  height: 30px;
+  width: 50%;
+  background-color: #58666e;
+  opacity: 0.96;
+      p{
+        margin-top: 8px !important;
+        text-align: center;
+        color: white;
+      }
+}
+.vidos{
+  align-items: center;
+  margin-bottom: 30px;
+}
+.presentation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.presentaionImg {
+  width: 100%;
+}
+.presentaionText{
+  padding-top: 10px;
+  width: 100%;
+  height: 100px;
+}
+.head-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  &__dotts {
+    width: 25%;
+  }
+  h2 {
+    text-align: center;
+    color: $text-grey;
+    letter-spacing: 6px;
+    font-size: 16px;
+  }
+}
+.arrowdownload{
+  position: absolute;
+  top:0;
+  border: 2px solid #75bdbd;
+  padding:8px;
+}
+.presentaitonTxt{
+  position: absolute;
+  display: none;
+  top:79.5%;
+  left:5%;
+  width: 41.5%;
+  text-align: left;
+  background-color: rgba(57, 59, 67, 0.8) !important;
+  padding:35px;
+
+    p{
+      color: white;
+      font-size: 20px
+    }
 }

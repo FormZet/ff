@@ -1,4 +1,4 @@
-.section-main {
+  .section-main {
   padding-top: 50px;
   position: relative;
   .desktop-background {
@@ -12,7 +12,7 @@
     height: 5vh;
     align-items: center;
     .h1-wrapper {
-      width: 90%;
+      width: 74%;
       height: 5vh;
       background-color: rgba(59, 67, 72, 0.8);
       color: $grey-blue;
@@ -44,7 +44,7 @@
   }
   .carousel-switcher {
     position: absolute;
-    width: 50px;
+    width: 30px;
     top: 50%;
   }
   .desktop-background {
@@ -58,6 +58,11 @@
   .-display-block {
     display: block;
   }
+    .empty-place{
+        p{
+          letter-spacing: 5px;
+        }
+    }
   .particles {
     width: 200px;
     display: flex;

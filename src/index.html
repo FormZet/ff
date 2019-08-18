@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>OMV</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 <body onscroll="empty()">
 <div class="max-width-container">
@@ -50,7 +51,7 @@
     </div>
 
 </header>
-<header class="header-desktop">
+<header class="header-desktop" style="background-color: white;">
     <div class="logo-part">
         <a href="index.html"><img src="./assets/images/logo.svg" alt=""></a>
     </div>
@@ -109,42 +110,42 @@
 
 
 <div class="section-main">
-    <div class="h1-container">
+    <div class="h1-container" style="z-index: 160;">
         <div class="h1-wrapper">
-            <h1>ВИДЕОАНАЛИТИКА<br> OMV</h1>
+            <h1>ВИДЕОАНАЛИТИКА OMV</h1>
         </div>
         <div class="white-square"></div>
     </div>
-    <div class="modal" data-modal="1">
-        <div>
-        <!--   Svg иконка для закрытия окна  -->
-        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-        <p class="modal__name">Ваше имя</p>
-        <input style="width: 85%;" type="text">
-        <p class="modal__ink">Название организации</p>
-        <input style="width: 85%" type="text">
-        <p class="modal__ink">Ваша почта</p>
-        <input style="width: 85%" type="text">
-        <p class="modal__tel">Контактный номер телефона</p>
-        <input style="width: 85%" type="tel" name="tel"
-               pattern="2[0-9]{3}-[0-9]{3}">
-        <p class="text">Ваш вопрос</p>
-        <input style="padding-bottom: 35px; width: 85%;" type="text">
-        <p style="color:grey; opacity: 0.9;"><input type="checkbox" name="option1" value="a1" checked>- согласен на обработку моих персональных данных</p>
+        <div class="modal" data-modal="1">
+            <div class="modalContent">
+            <!--   Svg иконка для закрытия окна  -->
+            <img src="./assets/images/cancel.svg" class="modal__cross js-modal-close">
+            <p class="modal__name">Ваше имя<span>*</span></p>
+            <input style="width: 85%;" type="text">
+            <p class="modal__ink">Название организации</p>
+            <input style="width: 85%" type="text">
+            <p class="modal__ink">Ваша почта<span>*</span></p>
+            <input style="width: 85%" type="tex">
+            <p class="modal__tel">Контактный номер телефона</p>
+            <input style="width: 85%" type="tel" name="tel"
+                   pattern="2[0-9]{3}-[0-9]{3}">
+            <p class="text">Ваш вопрос<span>*</span></p>
+            <input style="padding-bottom: 35px; width: 85%;" type="text">
+            <p style="color:grey; opacity: 0.9;"><input type="checkbox" name="option1" value="a1" checked>- согласен на обработку моих персональных данных</p>
+            </div>
+            <button style="margin-top:15px;" class="sendButton">ОТПРАВИТЬ</button>
         </div>
-        <button style="margin-top:15px;" class="sendButton">ОТПРАВИТЬ</button>
-    </div>
+    <div class="overlay js-overlay-modal"></div>
 
-
-    <img alt="" src="./assets/images/next.svg" onclick="prev()" class="prev carousel-switcher">
-    <img class="carousel-switcher next" onclick="next()" src="./assets/images/next.svg" alt="">
-    <img class="mobile-background" id="slider1" src="./assets/images/1ca.jpg" alt="">
-    <img class="mobile-background" id="slider2" src="./assets/images/2ca.jpg" alt="">
-    <img class="mobile-background" id="slider3" src="./assets/images/3ca.jpg" alt="">
-    <img class="mobile-background" id="slider4" src="./assets/images/4ca.jpg" alt="">
-    <img class="mobile-background" id="slider5" src="./assets/images/5ca.jpg" alt="">
-    <img class="mobile-background" id="slider6" src="./assets/images/6ca.jpg" alt="">
-    <img class="mobile-background" id="slider7" src="./assets/images/7ca.jpg" alt="">
+    <img style="z-index: 162" alt="" src="./assets/images/next.svg" onclick="prev()" class="prev carousel-switcher">
+    <img style="z-index: 162" class="carousel-switcher next" onclick="next()" src="./assets/images/next.svg" alt="">
+    <img class="mobile-background animated slideInRight" id="slider1" src="./assets/images/1ca.jpg" alt="">
+    <img class="mobile-background animated slideInRight" id="slider2" src="./assets/images/2ca.jpg" alt="">
+    <img class="mobile-background animated slideInRight" id="slider3" src="./assets/images/3ca.jpg" alt="">
+    <img class="mobile-background animated slideInRight"  id="slider4" src="./assets/images/4ca.jpg" alt="">
+    <img class="mobile-background animated slideInRight" id="slider5" src="./assets/images/5ca.jpg" alt="">
+    <img class="mobile-background animated slideInRight" id="slider6" src="./assets/images/6ca.jpg" alt="">
+    <img class="mobile-background animated slideInRight" id="slider7" src="./assets/images/7ca.jpg" alt="">
 <!--    <img class="desktop-background" id="slider1" src="./assets/images/carouselD/1.jpg" alt="">
     <img class="desktop-background" id="slider2" src="./assets/images/carouselD/2.jpg" alt="">
     <img class="desktop-background" id="slider3" src="./assets/images/carouselD/3.jpg" alt="">
@@ -193,7 +194,7 @@
         </div>
         <h2 class="desktop-left">ВОЗМОЖНОСТИ <br> МОДУЛЕЙ</h2>
         <img class="dotted-image mobile-only" src="./assets/images/eye.svg" alt="">
-        <div class="modules-powers">
+        <div class="modules-powers" style="margin-top: 50px">
             <div class="powers-list">
                 <div class="card">
                     Распознавание лиц
@@ -242,7 +243,7 @@
         </div>
         <div class="btn-learn-more modules-powers-btn">ПОДРОБНЕЕ</div>
         <div class="platform-powers">
-            <h2 class="desktop-left">ВОЗМОЖНОСТИ <br> ПЛАТФОРМЫ</h2>
+            <h2 class="desktop-left" style="margin-bottom: 35px;">ВОЗМОЖНОСТИ <br> ПЛАТФОРМЫ</h2>
             <img class="dotted-image mobile-only" src="./assets/images/compas.svg" alt="">
             <div class="powers-list">
                 <div class="card">
@@ -287,38 +288,47 @@
     <div class="container">
         <div class="head-container">
             <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
-            <img class="head-container__dotts d-head-container__dotts mobile-only" src="./assets/images/Точки.svg" alt="">
+            <img class="head-container__dotts d-head-container__dotts mobile-only" src="" alt="">
             <h2 class="mobile-only">ИНДУСТРИИ</h2>
             <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
-            <img class="head-container__dotts d-head-container__dotts mobile-only" src="./assets/images/Точки.svg" alt="">
+            <img class="head-container__dotts d-head-container__dotts mobile-only" src="" alt="">
         </div>
         <div class="products-list">
-            <div class="product product1">
+            <div class="product product1"><a href="usage-prom-and-building.html" >
                 <div class="bar"><p>Промышленность и строительство</p></div>
+            </a>
             </div>
-            <div class="product product2">
+            <div class="product product2"><a href="usage-safety.html" >
                 <div class="bar"><p>Общественная безопасность</p></div>
+            </a>
             </div>
-            <div class="product product3">
+            <div class="product product3"><a href="usage-educational-houses.html" >
                 <div class="bar"><p>Учебные заведения</p></div>
+            </a>
             </div>
-            <div class="product product4">
+            <div class="product product4"><a href="usage-events.html" >
                 <div class="bar"><p>Мероприятия</p></div>
+            </a>
             </div>
-            <div class="product product5">
+            <div class="product product5"><a href="usage-hotels.html" >
                 <div class="bar"><p>Гостиничный бизнес</p></div>
+            </a>
             </div>
-            <div class="product product6">
+            <div class="product product6"><a href="usage-smart-house.html" >
                 <div class="bar"><p>Умный дом</p></div>
+            </a>
             </div>
-            <div class="product product7">
+            <div class="product product7"><a href="usage-buisness.html" >
                 <div class="bar"><p>Бизнес персонал</p></div>
+            </a>
             </div>
-            <div class="product product8">
+            <div class="product product8"><a href="usage-smart-city.html" >
                 <div class="bar"><p>Умный город</p></div>
+            </a>
             </div>
-            <div class="product product9">
+            <div class="product product9"><a href="usage-retail.html" >
                 <div class="bar"><p>Ритейл</p></div>
+            </a>
             </div>
             <div class="product ">
             </div>
@@ -327,7 +337,7 @@
 </div>
 
 
-
+<div class="integrationStart"></div>
 
 <div class="section-intagration">
     <div class="container">
@@ -339,23 +349,29 @@
             <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
         </div>
         <div class="products-list">
-            <div class="product product10">
+            <div class="product product10"><a href="">
                 <div class="bar"><p>Системы видеонаблюдения</p></div>
+            </a>
             </div>
-            <div class="product product11">
+            <div class="product product11"><a href="">
                 <div class="bar"><p>Охранно-пожарные системы</p></div>
+            </a>
             </div>
-            <div class="product product12">
+            <div class="product product12"><a href="">
                 <div class="bar"><p>Замковые системы</p></div>
+            </a>
             </div>
-            <div class="product product13">
+            <div class="product product13"><a href="">
                 <div class="bar"><p>РТУ</p></div>
+            </a>
             </div>
-            <div class="product product14">
+            <div class="product product14"><a href="">
                 <div class="bar"><p>СКУД</p></div>
+            </a>
             </div>
-            <div class="product product15">
+            <div class="product product15"><a href="">
                 <div class="bar"><p>Химико-биологические детекторы</p></div>
+            </a>
             </div>
         </div>
     </div>
@@ -369,10 +385,10 @@
     <div class="container">
         <div class="head-container">
             <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
-            <img class="head-container__dotts d-head-container__dotts mobile-only" src="./assets/images/Точки.svg" alt="">
+            <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
             <h2 class="while-no-empty">ВОЗМОЖНОСТИ</h2>
             <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
-            <img class="head-container__dotts d-head-container__dotts mobile-only" src="./assets/images/Точки.svg" alt="">
+            <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
         </div>
         <img class="possibilities-img" src="./assets/images/possibilities.jpg" alt="">
         <div class="possibilities-list">
@@ -389,42 +405,43 @@
         <div class="btn-learn-more possibilities-btn">ПОДРОБНЕЕ</div>
     </div>
 </div>
-
-
-
-<div class="section-portfolio">
     <div class="container">
         <div class="head-container">
+
             <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
-            <img class="head-container__dotts d-head-container__dotts mobile-only" src="./assets/images/Точки.svg" alt="">
+            <img class="head-container__dotts d-head-container__dotts mobile-only" src="" alt="">
             <h2 class="while-no-empty">ПОРТФОЛИО</h2>
             <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
-            <img class="head-container__dotts d-head-container__dotts mobile-only" src="./assets/images/Точки.svg" alt="">
+            <img class="head-container__dotts d-head-container__dotts mobile-only" src="" alt="">
 
         </div>
+        <div style="position: relative" class="section-portfolio">
+
         <div class="left-part">
             <div class="video">
-                <video width="300" controls="controls">
+                <video poster="./assets/images/cars.jpg" width="100%" controls="controls">
                     <source src="./assets/images/videoplayback.mp4">
                 </video>
             </div>
             <img src="./assets/images/arrow-down.png" alt="" class="arrow-down">
-            <div class=" download-additional-materials">ДОПОЛНИТЕЛЬНЫЕ МАТЕИАЛЫ</div>
+            <div class=" download-additional-materials"> СКАЧАТЬ ДОПОЛНИТЕЛЬНЫЕ МАТЕИАЛЫ</div>
         </div>
-<!--        <div class="right-part">-->
-<!--            <p>НАШИ ЗАКАЗЧИКИ</p>-->
-<!--            <div class="right-part__image-container">-->
-<!--                <img src="./assets/images/huawei.png" alt="">-->
-<!--                <img src="./assets/images/huawei.png" alt="">-->
-<!--                <img src="./assets/images/huawei.png" alt="">-->
-<!--                <img src="./assets/images/huawei.png" alt="">-->
-<!--                <br>-->
-<!--                <img src="./assets/images/huawei.png" alt="">-->
-<!--                <img src="./assets/images/huawei.png" alt="">-->
-<!--                <img src="./assets/images/huawei.png" alt="">-->
-<!--                <img src="./assets/images/huawei.png" alt="">-->
-<!--            </div>-->
-<!--        </div>-->
+        <div class="right-part">
+
+            <p>НАШИ ЗАКАЗЧИКИ</p>
+            <div class="right-part__image-container">
+                <img src="./assets/images/huawei.png" alt="">
+                <img src="./assets/images/huawei.png" alt="">
+                <img src="./assets/images/huawei.png" alt="">
+                <img src="./assets/images/huawei.png" alt="">
+                <br>
+                <img src="./assets/images/huawei.png" alt="">
+                <img src="./assets/images/huawei.png" alt="">
+                <img src="./assets/images/huawei.png" alt="">
+                <img src="./assets/images/huawei.png" alt="">
+            </div>
+        </div>
+            <img class="dottsportfolio" style="position: absolute; top: 350px; right: -30px; margin-top: 20px; width: 40%" src="../assets/images/точки.svg">
     </div>
 </div>
 
@@ -435,14 +452,14 @@
 <div class="section-contacts" id="contacts">
     <div class="head-container">
         <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
-        <img class="head-container__dotts d-head-container__dotts mobile-only" src="./assets/images/Точки.svg" alt="">
+        <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
         <h2 class="while-no-empty">КОНТАКТЫ</h2>
         <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
-        <img class="head-container__dotts d-head-container__dotts mobile-only" src="./assets/images/Точки.svg" alt="">
+        <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
     </div>
     <div class="basement">
         <div class="image-part">
-            <img src="./assets/images/footer-image.jpg" alt="">
+            <img style="height: 65vh" src="./assets/images/footer-image.jpg" alt="">
         </div>
         <div class="footer-part">
             <div class="left-part">
@@ -455,7 +472,7 @@
                     </p>
                 </div>
                 <div class="contact">
-                    <p>Руководитель проекта
+                    <p>Технический директор
                         <br>
                         <a href="">kobak@gkomega.ru</a>
                         <br>
@@ -466,9 +483,7 @@
                     <p>191124, Санкт-Петербург, <br> Синопская набережная, <br class="-display-block"> дом 52</p>
                 </div>
                 <div class="social-networks-links">
-                    <a href=""><img src="./assets/images/whatsapp.svg" alt=""></a>
-                    <a href=""><img src="./assets/images/facebook.svg" alt=""></a>
-                    <a href=""><img src="./assets/images/vk.svg" alt=""></a>
+                   <!-- <a href=""><img src="./assets/images/vk.svg" alt=""></a>-->
                     <a href=""><img src="./assets/images/instagram.svg" alt=""></a>
                     <a href=""><img src="./assets/images/twitter.svg" alt=""></a>
                     <a href=""><img src="./assets/images/youtube.svg" alt=""></a>
@@ -498,6 +513,7 @@
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
+<script src="./assets/scripts/modal.js"></script>
 <script src="./assets/scripts/script.js"></script>
 </body>
 </html>

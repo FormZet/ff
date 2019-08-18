@@ -8,7 +8,7 @@
     <title>Разработки</title>
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
-<body>
+<body onscroll="devEmpty()">
 <header class="header-mobile">
     <div class="logo-part">
         <a class="menu-btn">
@@ -44,7 +44,7 @@
         </div>
     </div>
     <div class="mail-part">
-        <img src="./assets/images/envelope.svg" alt="">
+        <a href="#" class="js-open-modal" data-modal="1">   <img src="./assets/images/envelope.svg" alt=""></a>
     </div>
 </header>
 
@@ -58,7 +58,7 @@
 
     <div class="links-part">
         <div class="mail-part">
-            <img src="./assets/images/envelope.svg" alt="">
+            <a href="#" class="js-open-modal" data-modal="1">   <img src="./assets/images/envelope.svg" alt=""></a>
         </div>
         <ul>
             <li><a class="active-link" href="./about-company.html">О КОМПАНИИ</a></li>
@@ -104,15 +104,33 @@
     <img class="cars" src="./assets/images/dev.jpg" alt="">
     <div class="short-desc">
         <div class="paragraph">
-            <p>R&D OMV — исследование и разработка индивидульного решения по уникальным идеям заказчика</p>
+            <p>R&D<br> OMV — исследование и разработка индивидульного решения по уникальным идеям заказчика</p>
         </div>
     </div>
 </div>
 
-
-
-<div class="section-functioanl">
-    <h1>ФУНКЦИОНАЛ</h1>
+<div class="modal" data-modal="1">
+    <div class="modalContent">
+        <!--   Svg иконка для закрытия окна  -->
+        <img src="./assets/images/cancel.svg" class="modal__cross js-modal-close">
+        <p class="modal__name">Ваше имя<span>*</span></p>
+        <input style="width: 85%;" type="text">
+        <p class="modal__ink">Название организации</p>
+        <input style="width: 85%" type="text">
+        <p class="modal__ink">Ваша почта<span>*</span></p>
+        <input style="width: 85%" type="tex">
+        <p class="modal__tel">Контактный номер телефона</p>
+        <input style="width: 85%" type="tel" name="tel"
+               pattern="2[0-9]{3}-[0-9]{3}">
+        <p class="text">Ваш вопрос<span>*</span></p>
+        <input style="padding-bottom: 35px; width: 85%;" type="text">
+        <p style="color:grey; opacity: 0.9;"><input type="checkbox" name="option1" value="a1" checked>- согласен на обработку моих персональных данных</p>
+    </div>
+    <button style="margin-top:15px;" class="sendButton">ОТПРАВИТЬ</button>
+</div>
+<div class="overlay js-overlay-modal"></div>
+<div style="margin-top: 20px;" class="section-functioanl">
+    <h1 class="mobile-only">ФУНКЦИОНАЛ</h1>
     <div class="func-container">
         <div class="func">
             <img src="./assets/images/1d.svg" alt="">
@@ -196,7 +214,7 @@
 
     <img class="omega-lab mobile-only" src="./assets/images/omaga-lab-logo.png" alt="">
     <img src="./assets/images/man-with-a-tablet.jpg" class="mobile-only" alt="">
-    <div class="btn-learn-more write-us mobile-only">НАПИСАТЬ НАМ</div>
+    <div class="btn-learn-more write-us mobile-only"><a href="#" class="js-open-modal" data-modal="1">НАПИСАТЬ НАМ</a></div>
     <div class="long-desc mobile-only">
         <p>Команда создателей Omega Lab ругелярно принимает участие и проявляет себя во всероссийских конкурсах и выставках
         , набирается опыта и повышает уровень мастерства, в том числе и за рубежом. В 2017 году команда приняла участие
@@ -208,7 +226,7 @@
 
 
 
-    <div class="r-n-d-container desktop-only">
+    <div class="r-n-d-container" style="display: none";>
         <div class="left-part">
             <img class="omega-lab" src="./assets/images/omaga-lab-logo.png" alt="">
             <div class="white-screen">
@@ -226,7 +244,7 @@
         </div>
         <div class="right-part">
             <img src="./assets/images/man-with-a-tablet.jpg" alt="">
-            <div class=" write-us">НАПИСАТЬ НАМ</div>
+            <div class=" write-us" style="color: black; position: relative; bottom: 40px; right: 100px;"><a href="#" class="js-open-modal" data-modal="1">НАПИСАТЬ</a></div>
         </div>
     </div>
 
@@ -260,7 +278,7 @@
                     </p>
                 </div>
                 <div class="contact">
-                    <p>Руководитель проекта
+                    <p>Технический директор
                         <br>
                         <a href="">kobak@gkomega.ru</a>
                         <br>
@@ -290,7 +308,22 @@
 </div>
 
 
-
+<script>
+    function devEmpty() {
+        if (document.documentElement.scrollTop > document.getElementsByClassName('section-functioanl')[0].offsetTop - 170) {
+            document.getElementsByClassName('empty-place')[0].innerHTML = '<p>ФУНКЦИОНАЛ</p>';
+        }
+        if (document.documentElement.scrollTop < document.getElementsByClassName('section-functioanl')[0].offsetTop -170 ) {
+            document.getElementsByClassName('empty-place')[0].innerHTML = '<p></p>';
+        }
+        if (document.documentElement.scrollTop > document.getElementsByClassName('r-n-d-container')[0].offsetTop - 150 ) {
+            document.getElementsByClassName('empty-place')[0].innerHTML = '<p>R&D</p>';
+        }
+        if (document.documentElement.scrollTop > document.getElementsByClassName('section-contacts')[0].offsetTop - 110) {
+            document.getElementsByClassName('empty-place')[0].innerHTML = '<p>КОНТАКТЫ</p>';
+        }
+    }
+</script>
 
 
 
@@ -306,6 +339,7 @@
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
+<script src="./assets/scripts/modal.js"></script>
 <script src="./assets/scripts/script.js"></script>
 </body>
 </html>

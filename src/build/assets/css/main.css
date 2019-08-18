@@ -415,6 +415,7 @@
           color: white;
           font-size: 16px;
           font-weight: 300;
+          height: 350px;
           font-family: "SFUID-light";
           max-width: 505px;
           margin: 0 auto; }
@@ -1314,7 +1315,9 @@
     justify-content: space-between !important;
     margin-bottom: 120px !important; }
     .section-about .main-info .right-part {
-      width: 55% !important; }
+      width: 55% !important;
+      height: 250px;}
+
     .section-about .main-info .left-part {
       width: 45% !important; }
       .section-about .main-info .left-part__container {

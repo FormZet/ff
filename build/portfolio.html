@@ -8,7 +8,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
-<body onscroll="empty()">
+<body onscroll="portEmpty()">
 <div class="max-width-container">
     <header class="header-mobile">
         <div class="logo-part">
@@ -45,7 +45,7 @@
             </div>
         </div>
         <div class="mail-part">
-            <img src="./assets/images/envelope.svg" alt="">
+            <a href="#" class="js-open-modal" data-modal="1">   <img src="./assets/images/envelope.svg" alt=""></a>
         </div>
     </header>
     <header class="header-desktop">
@@ -58,7 +58,7 @@
 
         <div class="links-part">
             <div class="mail-part">
-                <img src="./assets/images/envelope.svg" alt="">
+                <a href="#" class="js-open-modal" data-modal="1">   <img src="./assets/images/envelope.svg" alt=""></a>
             </div>
             <ul>
                 <li><a class="active-link" href="./about-company.html">О КОМПАНИИ</a></li>
@@ -109,41 +109,170 @@
         </div>
     </div>
     <div class="section-portfolio-features" style="position: relative">
-        <div class="container videoflex">
-        <div>
-            <div id="video_pop" onclick="onPopClick()"></div>
-            <video width="30%" poster="./assets/images/product-bg-5.jpg"
-                   onclick="onVideoClick('./assets/images/videoplayback.mp4');">
-
-            </video>
-            <div id="video_pop" onclick="onPopClick()"></div>
-            <video width="30%" poster="./assets/images/product-bg-5.jpg"
-                   onclick="onVideoClick('./assets/images/videoplayback.mp4');">
-
-            </video>
-
+        <div class="head-container">
+            <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
+            <img class="head-container__dotts d-head-container__dotts mobile-only" src="" alt="">
+            <h2 class="mobile-only">ВИДЕОРОЛИКИ</h2>
+            <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
+            <img class="head-container__dotts d-head-container__dotts mobile-only" src="" alt="">
         </div>
-            <div>
+        <div class="container videoflex">
+        <div class="videoCol">
+
+            <div id="video_pop" onclick="onPopClick()"></div>
+            <div class="vidos">
+            <div class="videoBlank"><p>ИДЕНТИФИКАЯ ЛИЦ</p></div>
+            <video width="50%" poster="./assets/images/product-bg-5.jpg"
+                   onclick="onVideoClick('./assets/images/videoplayback.mp4');">
+
+            </video>
+        </div>
+
                 <div id="video_pop" onclick="onPopClick()"></div>
-                <video width="30%" poster="./assets/images/product-bg-5.jpg"
+            <div class="vidos">
+                <div class="videoBlank"><p>ИДЕНТИФИКАЯ ЛИЦ</p></div>
+                <video width="50%" poster="./assets/images/product-bg-5.jpg"
                        onclick="onVideoClick('./assets/images/videoplayback.mp4');">
 
                 </video>
-                <div id="video_pop" onclick="onPopClick()"></div>
-                <video width="30%" poster="./assets/images/product-bg-5.jpg"
-                       onclick="onVideoClick('./assets/images/videoplayback.mp4');">
+            </div>
+        </div>
+            <div class="videoCol">
 
-                </video>
+                    <div id="video_pop" onclick="onPopClick()"></div>
+                <div class="vidos">
+                    <div class="videoBlank"><p>ИДЕНТИФИКАЯ ЛИЦ</p></div>
+                    <video width="50%" poster="./assets/images/product-bg-5.jpg"
+                           onclick="onVideoClick('./assets/images/videoplayback.mp4');">
 
+                    </video>
+                </div>
+
+                    <div id="video_pop" onclick="onPopClick()"></div>
+                <div class="vidos">
+                    <div class="videoBlank"><p>ИДЕНТИФИКАЯ ЛИЦ</p></div>
+                    <video width="50%" poster="./assets/images/product-bg-5.jpg"
+                           onclick="onVideoClick('./assets/images/videoplayback.mp4');">
+
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="modal" data-modal="1">
+            <div class="modalContent">
+                <!--   Svg иконка для закрытия окна  -->
+                <img src="./assets/images/cancel.svg" class="modal__cross js-modal-close">
+                <p class="modal__name">Ваше имя<span>*</span></p>
+                <input style="width: 85%;" type="text">
+                <p class="modal__ink">Название организации</p>
+                <input style="width: 85%" type="text">
+                <p class="modal__ink">Ваша почта<span>*</span></p>
+                <input style="width: 85%" type="tex">
+                <p class="modal__tel">Контактный номер телефона</p>
+                <input style="width: 85%" type="tel" name="tel"
+                       pattern="2[0-9]{3}-[0-9]{3}">
+                <p class="text">Ваш вопрос<span>*</span></p>
+                <input style="padding-bottom: 35px; width: 85%;" type="text">
+                <p style="color:grey; opacity: 0.9;"><input type="checkbox" name="option1" value="a1" checked>- согласен на обработку моих персональных данных</p>
+            </div>
+            <button style="margin-top:15px;" class="sendButton">ОТПРАВИТЬ</button>
+        </div>
+        <div class="overlay js-overlay-modal"></div>
+        <div class="head-container">
+            <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
+            <img class="head-container__dotts d-head-container__dotts mobile-only" src="" alt="">
+            <h2 class="mobile-only">ПРЕЗЕНТАЦИИ</h2>
+            <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
+            <img class="head-container__dotts d-head-container__dotts mobile-only" src="" alt="">
+        </div>
+        <div class="presentation" style="margin-bottom: 15px; position: relative">
+
+            <img src="./assets/images/1ca.jpg" class="presentaionImg">
+            <img src="./assets/images/arrow-down.png" class="arrowdownload">
+            <div class="presentaitonTxt"><p>Демонстрационные презентации,
+                которые<br>смогут подробнеерассказать Вам об OMV</p></div>
+            <div class="presentaionText videoBlank mobile-only"><p>Демонстрационные презентации,<br>
+            которые смогут подробнее<br> рассказать Вам об OMV</p></div>
+        </div>
+    </div>
+
+    <div class="section-contacts" id="contacts">
+        <div class="head-container">
+            <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
+            <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
+            <h2 class="while-no-empty">КОНТАКТЫ</h2>
+            <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
+            <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
+        </div>
+        <div class="basement">
+            <div class="image-part">
+                <img style="height: 65vh" src="./assets/images/footer-image.jpg" alt="">
+            </div>
+            <div class="footer-part">
+                <div class="left-part">
+                    <div class="contact">
+                        <p>Руководитель проекта
+                            <br>
+                            <a href="">soka@gkomega.ru</a>
+                            <br>
+                            <a href="">+7 (921) 913-26-69</a>
+                        </p>
+                    </div>
+                    <div class="contact">
+                        <p>Технический директор
+                            <br>
+                            <a href="">kobak@gkomega.ru</a>
+                            <br>
+                            <a href="">+7 (904) 637-01-37</a>
+                        </p>
+                    </div>
+                    <div class="contact">
+                        <p>191124, Санкт-Петербург, <br> Синопская набережная, <br class="-display-block"> дом 52</p>
+                    </div>
+                    <div class="social-networks-links">
+                        <!-- <a href=""><img src="./assets/images/vk.svg" alt=""></a>-->
+                        <a href=""><img src="./assets/images/instagram.svg" alt=""></a>
+                        <a href=""><img src="./assets/images/twitter.svg" alt=""></a>
+                        <a href=""><img src="./assets/images/youtube.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="right-part">
+                    <p class="green-sign">НАШИ ПАРТНЕРЫ</p>
+                    <div class="green-square-wrapper">
+                        <div class="green-square"></div>
+                        <p>Группа компаний <br> «ОМЕГА» </p>
+                    </div>
+                    <div class="green-square-wrapper">
+                        <div class="green-square"></div>
+                        <p>Донской <br> Государственный <br> Технический Университет</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 </div>
+<script>
+    function portEmpty() {
+        if (document.documentElement.scrollTop > document.getElementsByClassName('videoCol')[0].offsetTop + 300) {
+            document.getElementsByClassName('empty-place')[0].innerHTML = '<p>ВИДЕОРОЛИКИ</p>';
+        }
+        if (document.documentElement.scrollTop < document.getElementsByClassName('videoCol')[0].offsetTop - 170 ) {
+            document.getElementsByClassName('empty-place')[0].innerHTML = '<p></p>';
+        }
+        if (document.documentElement.scrollTop > document.getElementsByClassName('presentation')[0].offsetTop + 1000 ) {
+            document.getElementsByClassName('empty-place')[0].innerHTML = '<p>ПРЕИМУЩЕСТВА</p>';
+        }
+        if (document.documentElement.scrollTop > document.getElementsByClassName('section-contacts')[0].offsetTop - 110) {
+            document.getElementsByClassName('empty-place')[0].innerHTML = '<p>КОНТАКТЫ</p>';
+        }
+    }
+</script>
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
+<script src="./assets/scripts/modal.js"></script>
 <script src="./assets/scripts/script.js"></script>
 
 </body>

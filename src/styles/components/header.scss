@@ -53,7 +53,7 @@
     padding: 0 30px;
   }
   .links-part {
-    background-color: rgba(89, 101, 108, 0.8);
+    background-color:#515e68;
     width: 1000px;
     display: flex;
     align-items: center;
@@ -100,8 +100,8 @@
             border-bottom: 1px solid $text-grey;
             width: 180px;
             &:hover {
-              background-color: $text-grey;
-              color: #dfe4eb;
+              background-color: white;
+              color: black;
             }
           }
         }
@@ -140,11 +140,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(89, 101, 108, 0.8);
+    background-color: #515e68;
     img {
       width: 80px;
     }
   }
+
   .empty-place {
     height: 60px;
     z-index: -1;
@@ -152,10 +153,13 @@
     position: absolute;
     display: none;
     width: calc(100% - 1140px);
-    left: calc(100% - 1140px);
+    left: calc(100% - 1325px);
+
     p {
       margin-top: 16px;
       color: $grey-blue;
+      letter-spacing: 5px;
+      text-align: center;
     }
   }
 }

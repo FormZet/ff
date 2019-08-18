@@ -44,7 +44,7 @@
         </div>
     </div>
     <div class="mail-part">
-        <img src="./assets/images/envelope.svg" alt="">
+        <a href="#" class="js-open-modal" data-modal="1">   <img src="./assets/images/envelope.svg" alt=""></a>
     </div>
 </header>
 
@@ -58,7 +58,7 @@
 
     <div class="links-part">
         <div class="mail-part">
-            <img src="./assets/images/envelope.svg" alt="">
+            <a href="#" class="js-open-modal" data-modal="1">   <img src="./assets/images/envelope.svg" alt=""></a>
         </div>
         <ul>
             <li><a class="active-link" href="./about-company.html">О КОМПАНИИ</a></li>
@@ -101,7 +101,7 @@
 
 
 <div class="section-main-possibilities">
-    <img class="cars" src="./assets/images/Применение_3.jpg" alt="">
+    <img class="cars" src="./assets/images/usage3.jpg" alt="">
     <div class="short-desc">
         <div class="paragraph">
             <p><span>УЧЕБНЫЕ ЗАВЕДЕНИЯ</span><br>Главная задача видеоаналитики в стенах школ и университетов
@@ -111,8 +111,26 @@
         </div>
     </div>
 </div>
-
-
+<div class="modal" data-modal="1">
+    <div class="modalContent">
+        <!--   Svg иконка для закрытия окна  -->
+        <img src="./assets/images/cancel.svg" class="modal__cross js-modal-close">
+        <p class="modal__name">Ваше имя<span>*</span></p>
+        <input style="width: 85%;" type="text">
+        <p class="modal__ink">Название организации</p>
+        <input style="width: 85%" type="text">
+        <p class="modal__ink">Ваша почта<span>*</span></p>
+        <input style="width: 85%" type="tex">
+        <p class="modal__tel">Контактный номер телефона</p>
+        <input style="width: 85%" type="tel" name="tel"
+               pattern="2[0-9]{3}-[0-9]{3}">
+        <p class="text">Ваш вопрос<span>*</span></p>
+        <input style="padding-bottom: 35px; width: 85%;" type="text">
+        <p style="color:grey; opacity: 0.9;"><input type="checkbox" name="option1" value="a1" checked>- согласен на обработку моих персональных данных</p>
+    </div>
+    <button style="margin-top:15px;" class="sendButton">ОТПРАВИТЬ</button>
+</div>
+<div class="overlay js-overlay-modal"></div>
 <div class="section-building-features">
     <div class="container">
         <div class="head-container">
@@ -229,7 +247,7 @@
                         </p>
                     </div>
                     <div class="contact">
-                        <p>Руководитель проекта
+                        <p>Технический директор
                             <br>
                             <a href="">kobak@gkomega.ru</a>
                             <br>
@@ -280,6 +298,7 @@
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
+<script src="./assets/scripts/modal.js"></script>
 <script src="./assets/scripts/script.js"></script>
 </header>
 </body>

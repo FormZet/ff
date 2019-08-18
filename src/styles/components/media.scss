@@ -15,6 +15,7 @@
       }
     }
   }
+
 }
 @media screen and (min-width:450px) {
   .header-mobile {
@@ -58,6 +59,10 @@
   .m-head-container__dotts {
   display: none;
 }
+  .presentaitonTxt{
+    display: block;
+  }
+
   .d-head-container__dotts {
     display: block;
     max-width: 220px;
@@ -173,6 +178,7 @@
       }
     }
   }
+
   .company-desc {
     p {
       width: 80%;
@@ -199,7 +205,8 @@
     margin-bottom: 70px;
     justify-content: space-around;
     .technology {
-      max-width: 310px;
+      max-width: 260px;
+
     }
   }
   .func-container {
@@ -210,10 +217,60 @@
       margin: 0 20px;
     }
   }
+
+
 }
 @media screen and (min-width: 1024px) {
   .section-contacts {
     margin-top: 150px;
+  }
+  .image-part{
+    img{
+      height: 70vh !important;
+    }
+  }
+  .presentation{
+    margin-top: 250px;
+  }
+  .videoflex{
+    margin-top: 250px !important;
+    flex-direction: row!important;
+  }
+  .technology-container{
+    width: 1024px;
+    margin-top: 80px !important;
+  }
+  .r-n-d-container{
+    display: flex !important;
+  }
+;
+  .dottsportfolio{
+    display: block!important;;
+  }
+  .header-desktop{
+    width: 90%;
+  }
+  .section-main{
+    width: 90%;
+    margin:0 auto;
+  }
+  .max-width-container{
+
+    margin: 0 auto;
+  }
+  .aboutflex{
+    margin-top: 300px;
+    display: flex !important;
+  }
+  .partnersAbout{
+    display: block !important;
+  }
+  .image-part{
+    height: 65vh;
+  }
+  .footer-part{
+    margin-top: 25px;
+    margin-bottom: 0;
   }
   .d-head-container__dotts {
     display: none;
@@ -221,11 +278,30 @@
   .mobile-only {
     display: none!important;
   }
+  .man-with-a-tablet1{
+    display: block;
+  }
+  .possibilities-img{
+    height: 100vh;
+  }
   .header-desktop {
     display: flex;
   }
+  .section-about-company{
+    width: 95%;
+    margin: 0 auto;
+  }
+  .man-with-a-tablet{
+    position: absolute;
+    top: 100px;
+    left: 950px;
+  }
+
   .short-desc {
     padding-left: 40px!important;
+    width: 40%;
+    margin-left: 50px;
+
   }
   .paragraph {
     p {
@@ -238,14 +314,16 @@
       }
     }
   }
+
   .section-technologies,
   .section-features{
-    margin-bottom: 150px!important;
   }
   .section-main-possibilities {
     position: relative;
     height: 100vh;
     overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
     img {
       width: 100%;
     }
@@ -256,7 +334,7 @@
       right: 0;
       margin-bottom: 0;
       width: 40%;
-      height: 25%;
+      height: 20%;
       background-color: rgba(43, 55, 62, 0.8);
       display: flex;
       align-items: center;
@@ -268,14 +346,30 @@
   .section-company-partners {
     overflow: hidden;
     .man-with-a-tablet {
-      width: 80%;
+      width: 35%;
       margin: 0 auto;
       display: block;
     }
     .write-us {
-      margin: 40px 0 90px 100% !important;
+      margin: 40px 0 90px !important;
       transform: translateX(-130%)!important;
     }
+  }
+  .section-portfolio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+        .right-part{
+          margin-bottom: 250px;
+          img{
+            width: 10%;
+          }
+          width: 50%;
+        }
+        .left-part{
+          width: 50%;
+        }
   }
   .mobile-background {
     display: none;
@@ -307,18 +401,20 @@
   }
   .particles {
     display: block;
+    cursor: pointer;
   }
   .next {
     display: block;
+    cursor: pointer;
   }
   .prev {
     display: block;
+    cursor: pointer;
   }
   .desktop-background {
     display: block!important;
   }
   .card {
-    border-radius: 8px 8px 0 0!important;
     border-width: 3px!important;
   }
   .section-industry {
@@ -336,12 +432,11 @@
     max-width: 35vw !important;
   }
   .btn-learn-more {
-    margin: 0 0 90px 100% !important;
+    margin: 0 0 90px 96% !important;
     transform: translateX(-70%);
     cursor: pointer;
-    color: #8fc9c9!important;
     background-color: white!important;
-    border: 1px solid #8fc9c9!important;
+    border: 2px solid #8fc9c9!important;
     transition: .3s;
     &:hover {
       color: white!important;
@@ -363,10 +458,10 @@
   }
 
   .possibilities-btn {
-    margin: 30px 0 90px 100% !important;
+    margin: 30px 0 90px 95% !important;
   }
   .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
   .section-main {
@@ -376,7 +471,7 @@
   .desktop-left {
     text-align: left!important;
     font-size: 14px;
-  }
+    }
   .header-mobile {
     display: none;
   }
@@ -385,6 +480,8 @@
   }
   .section-about {
     .main-info {
+      margin-top: 20px;
+
       flex-direction: row!important;
       justify-content: space-between!important;
       margin-bottom: 120px!important;
@@ -397,8 +494,10 @@
           margin: 0!important;
         }
         .dotted-image {
-          width: 65%;
+          width: 55%;
           margin: 0!important;
+          margin-bottom: 20px!important;
+          margin-top: -60px!important;
         }
         p {
           text-align: left!important;
@@ -434,8 +533,8 @@
   .possibilities-list {
     position: absolute;
     bottom: 54px;
-    width: 18%;
-    height: 55%;
+    width: 15%;
+    height: 60%;
     background-color: rgba(57, 59, 67, 0.8) !important;
     padding: 50px 0!important;
     &__container {
@@ -444,7 +543,7 @@
         width: 45% !important;
       }
       p {
-        font-size: 14px!important;
+        font-size: 14px;
         text-align: right!important;
       }
     }
@@ -478,6 +577,9 @@
   .card {
     font-size: 20px!important;
   }
+  .desktop-left{
+    margin-left: 110px
+  }
   .h1-container {
     bottom: 20% !important;
   }
@@ -485,9 +587,10 @@
     display: none!important;
   }
   .possibilities-list {
-    height: 50% !important;
+    height: 60%;
+
     p {
-      font-size: 16px!important;
+      font-size: 16px;
     }
   }
   .section-about {
@@ -558,7 +661,7 @@
     margin-bottom: 150px;
   }
   .section-technologies {
-    margin-top: 200px;
+    margin-top: 100px;
   }
   .empty-place {
     transform: translateX(-36%) !important;
@@ -623,13 +726,22 @@
   .empty-place {
     transform: translateX(-43%) !important;
   }
+  .arrowdownload{
+    top: 80%;
+  }
   .max-width-container {
     max-width: 1920px;
     margin: 0 auto;
   }
   .possibilities-list {
     width: 13%!important;
-    height: 40%!important;
+    height: 60%;
+    font-size: 20px;
+  }
+  .presentaionImg{
+    margin-top: 100px;
+    width: 90%;
+    height: 70vh;
   }
   .h1-container {
     h1 {
@@ -637,3 +749,4 @@
     }
   }
 }
+

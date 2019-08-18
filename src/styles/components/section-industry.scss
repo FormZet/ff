@@ -43,34 +43,40 @@
           z-index: 3;
           margin: 0;
         }
+
+      }
+      a{
+        display: block;
+        height: 100%;
+        text-align: center;
       }
     }
     .product1 {
-      background-image: url("../images/product-bg-1.jpg");
+      background-image: url("../images/usage1.jpg");
     }
     .product2 {
-      background-image: url("../images/product-bg-2.jpg");
+      background-image: url("../images/usage2.jpg");
     }
     .product3 {
-      background-image: url("../images/product-bg-3.jpg");
+      background-image: url("../images/usage3.jpg");
     }
     .product4 {
-      background-image: url("../images/product-bg-4.jpg");
+      background-image: url("../images/usage4.jpg");
     }
     .product5 {
-      background-image: url("../images/product-bg-5.jpg");
+      background-image: url("../images/usage5.jpg");
     }
     .product6 {
-      background-image: url("../images/product-bg-6.jpg");
+      background-image: url("../images/usage6.jpg");
     }
     .product7 {
-      background-image: url("../images/product-bg-7.jpg");
+      background-image: url("../images/usage7.jpg");
     }
     .product8 {
-      background-image: url("../images/product-bg-8.jpg");
+      background-image: url("../images/usage8.jpg");
     }
     .product9 {
-      background-image: url("../images/product-bg-9.jpg");
+      background-image: url("../images/usage9.jpg");
     }
   }
 }
