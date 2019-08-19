@@ -53,6 +53,10 @@ let fifthSlide =  document.getElementsByClassName('mobile-background')[4];
 let sixthSlide =  document.getElementsByClassName('mobile-background')[5];
 let seventhSlide =  document.getElementsByClassName('mobile-background')[6];
 
+
+
+
+
 firstSlide.classList.add('-display-block');
 let num = 0;
 function next() {
@@ -141,7 +145,7 @@ $('.next').on('click', function() {
 
 
 function particleClick() {
-    document.getElementsByClassName('-display-block')[0].classList.remove('-display-block');
+    document.getElementsByClassName('-gidisplay-block')[0].classList.remove('-display-block');
     document.getElementsByClassName('-current-particle')[0].classList.remove('-current-particle');
     slides[num].classList.add('-display-block');
     document.getElementsByClassName('particle')[num].classList.add('-current-particle');
