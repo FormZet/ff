@@ -129,6 +129,17 @@ function prev() {
             break;
     }
 }
+
+$('.prev').on('click', function() {
+    $('.mobile-background').removeClass('slideInRight')
+    $('.mobile-background').addClass('slideInLeft')
+});
+$('.next').on('click', function() {
+    $('.mobile-background').removeClass('slideInLeft')
+    $('.mobile-background').addClass('slideInRight')
+});
+
+
 function particleClick() {
     document.getElementsByClassName('-display-block')[0].classList.remove('-display-block');
     document.getElementsByClassName('-current-particle')[0].classList.remove('-current-particle');
