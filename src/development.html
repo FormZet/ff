@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" congtent="ie=edge">
     <title>Разработки</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
-<body onscroll="devEmpty()">
+<body>
 <header class="header-mobile">
     <div class="logo-part">
         <a class="menu-btn">
@@ -129,6 +130,7 @@
     <button style="margin-top:15px;" class="sendButton">ОТПРАВИТЬ</button>
 </div>
 <div class="overlay js-overlay-modal"></div>
+<h2 style="display: none;" class="h2-desktop h2Func">ФУНКЦИОНАЛ</h2>
 <div style="margin-top: 20px;" class="section-functioanl">
     <h1 class="mobile-only">ФУНКЦИОНАЛ</h1>
     <div class="func-container">
@@ -205,7 +207,7 @@
             <p>Получение параметров заданных объектов, <br> таких как цвет, форма, расположение, количество и прочее</p>
         </div>
     </div>
-
+    <h2 style="display: none;" class="h2-desktop h2RnD">R&D</h2>
     <h1 class="r-and-d mobile-only">R&D</h1>
     <div class="r-d-desc mobile-only">
         <p>Наша команда занимается R&D проектами с 2014 года и находится в Санкт-Петербурге Мы не боимся и готовы реализовывать
@@ -214,7 +216,7 @@
 
     <img class="omega-lab mobile-only" src="./assets/images/omaga-lab-logo.png" alt="">
     <img src="./assets/images/man-with-a-tablet.jpg" class="mobile-only" alt="">
-    <div class="btn-learn-more write-us mobile-only"><a href="#" class="js-open-modal" data-modal="1">НАПИСАТЬ НАМ</a></div>
+    <div class="btn-learn-more write-us mobile-only"><a style="text-decoration: none; color: black;" href="#" class="js-open-modal" data-modal="1">НАПИСАТЬ НАМ</a></div>
     <div class="long-desc mobile-only">
         <p>Команда создателей Omega Lab ругелярно принимает участие и проявляет себя во всероссийских конкурсах и выставках
         , набирается опыта и повышает уровень мастерства, в том числе и за рубежом. В 2017 году команда приняла участие
@@ -244,7 +246,7 @@
         </div>
         <div class="right-part">
             <img src="./assets/images/man-with-a-tablet.jpg" alt="">
-            <div class=" write-us" style="color: black; position: relative; bottom: 40px; right: 100px;"><a href="#" class="js-open-modal" data-modal="1">НАПИСАТЬ</a></div>
+            <div class=" write-us" style="color: black; position: relative; bottom: 40px; right: 100px;"><a  style="text-decoration: none; color: black;" href="#" class="js-open-modal" data-modal="1">НАПИСАТЬ</a></div>
         </div>
     </div>
 
@@ -259,15 +261,22 @@
 
 <div class="section-contacts" id="contacts">
     <div class="head-container">
-        <img class="head-container__dotts mobile-only" src="./assets/images/dotts.svg" alt="">
-        <h2 class="mobile-only">КОНТАКТЫ</h2>
-        <img class="head-container__dotts mobile-only" src="./assets/images/dotts.svg" alt="">
+        <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
+        <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
+        <h2 class="while-no-empty mobile-only">КОНТАКТЫ</h2>
+        <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
+        <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
     </div>
     <div class="basement">
+        <h2 style="display: none" class="h2Contacts h2-desktop">КОНТАКТЫ</h2>
         <div class="image-part">
-            <img src="./assets/images/footer-image.jpg" alt="">
+            <img class="mobile-only" src="./assets/images/footer-image.jpg" alt="">
+            <img class="footerImgDesc" style="display: none" src="./assets/images/1con.jpg" alt="">
         </div>
         <div class="footer-part">
+
+
+
             <div class="left-part">
                 <div class="contact">
                     <p>Руководитель проекта
@@ -286,12 +295,10 @@
                     </p>
                 </div>
                 <div class="contact">
-                    <p>191124, Санкт-Петербург, <br> Синопская набережная, дом 52</p>
+                    <p>191124, Санкт-Петербург, <br> Синопская набережная, <br class="-display-block"> дом 52</p>
                 </div>
                 <div class="social-networks-links">
-                    <a href=""><img src="./assets/images/whatsapp.svg" alt=""></a>
-                    <a href=""><img src="./assets/images/facebook.svg" alt=""></a>
-                    <a href=""><img src="./assets/images/vk.svg" alt=""></a>
+                    <!-- <a href=""><img src="./assets/images/vk.svg" alt=""></a>-->
                     <a href=""><img src="./assets/images/instagram.svg" alt=""></a>
                     <a href=""><img src="./assets/images/twitter.svg" alt=""></a>
                     <a href=""><img src="./assets/images/youtube.svg" alt=""></a>
@@ -299,9 +306,14 @@
             </div>
             <div class="right-part">
                 <p class="green-sign">НАШИ ПАРТНЕРЫ</p>
-                <p>Группа компаний <br> «ОМЕГА» </p>
-                <div class="green-square"></div>
-                <p>Донской <br> Государственный <br> Технический Университет</p>
+                <div class="green-square-wrapper">
+                    <div class="green-square"></div>
+                    <p>Группа компаний <br> «ОМЕГА» </p>
+                </div>
+                <div class="green-square-wrapper">
+                    <div class="green-square"></div>
+                    <p>Донской <br> Государственный <br> Технический<br> Университет</p>
+                </div>
             </div>
         </div>
     </div>
@@ -309,7 +321,7 @@
 
 
 <script>
-    function devEmpty() {
+    /*function devEmpty() {
         if (document.documentElement.scrollTop > document.getElementsByClassName('section-functioanl')[0].offsetTop - 170) {
             document.getElementsByClassName('empty-place')[0].innerHTML = '<p>ФУНКЦИОНАЛ</p>';
         }
@@ -322,7 +334,7 @@
         if (document.documentElement.scrollTop > document.getElementsByClassName('section-contacts')[0].offsetTop - 110) {
             document.getElementsByClassName('empty-place')[0].innerHTML = '<p>КОНТАКТЫ</p>';
         }
-    }
+    }*/
 </script>
 
 

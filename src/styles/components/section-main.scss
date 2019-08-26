@@ -12,47 +12,38 @@
     height: 5vh;
     align-items: center;
     .h1-wrapper {
-      width: 74%;
+      padding: 0 30px;
+      width: auto;
       height: 5vh;
       background-color: rgba(59, 67, 72, 0.8);
       color: $grey-blue;
       display: flex;
-      padding: 0 0 0 6% ;
       align-items: center;
     }
     h1 {
       color: white;
-      font-size: 84%;
+      font-size:15px;
       font-family: "SFUID-Regular";
-      letter-spacing: 4px;
+
       font-weight: 300;
       margin: 0;
+      word-wrap: normal;
     }
     .white-square {
-      width: 10%;
+      width: 9%;
       height: 5vh;
       background-color: rgba(255,255,255,0.8);
     }
   }
-  .prev {
-    transform: scaleX(-1) translateY(-50%);
-    left: 5%;
-  }
-  .next {
-    right: 5%;
-    transform: translateY(-50%)
-  }
-  .carousel-switcher {
-    position: absolute;
-    width: 30px;
-    top: 50%;
-  }
+
+
   .desktop-background {
     display: none;
     width: 100%;
   }
+
   .mobile-background {
-    width: 100%;
+
     display: none;
   }
   .-display-block {
@@ -85,3 +76,16 @@
 
   }
 }
+  .prev {
+       transform: scaleX(-1) translateY(-50%);
+    left: 5%;
+  }
+  .next {
+    right: 5%;
+    transform: translateY(-50%)
+  }
+  .carousel-switcher {
+    position: absolute;
+    width: 30px;
+    top: 11%;
+  }

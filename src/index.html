@@ -6,10 +6,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>OMV</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/png">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
-<body onscroll="empty()">
+<body onscroll="emptyarrow()">
 <div class="max-width-container">
 <header class="header-mobile">
     <div class="logo-part">
@@ -51,13 +52,13 @@
     </div>
 
 </header>
-<header class="header-desktop" style="background-color: white;">
+<header class="header-desktop"  >
     <div class="logo-part">
         <a href="index.html"><img src="./assets/images/logo.svg" alt=""></a>
     </div>
-    <div class="empty-place">
+   <!-- <div class="empty-place">
 
-    </div>
+    </div>-->
 
     <div class="links-part">
         <div class="mail-part">
@@ -104,15 +105,16 @@
 
 </header>
 
+    <img style="z-index: 16;" alt="" src="./assets/images/next.svg" onclick="prev()" class="prev carousel-switcher">
+    <img style="z-index: 16;" class="carousel-switcher next" onclick="next()" src="./assets/images/next.svg" alt="">
 
-
-
+    <div style=" cursor: pointer;" class="arrowTopDiv"></div>
 
 
 <div class="section-main">
-    <div class="h1-container" style="z-index: 160;">
+    <div class="h1-container" style="z-index: 16;">
         <div class="h1-wrapper">
-            <h1>ВИДЕОАНАЛИТИКА OMV</h1>
+            <h1 class="main-name">ВИДЕОАНАЛИТИКА OMV</h1>
         </div>
         <div class="white-square"></div>
     </div>
@@ -137,15 +139,14 @@
         </div>
     <div class="overlay js-overlay-modal"></div>
 
-    <img style="z-index: 162" alt="" src="./assets/images/next.svg" onclick="prev()" class="prev carousel-switcher">
-    <img style="z-index: 162" class="carousel-switcher next" onclick="next()" src="./assets/images/next.svg" alt="">
-    <img class="mobile-background animated slideInRight" id="slider1" src="./assets/images/1ca.jpg" alt="">
-    <img class="mobile-background animated slideInRight" id="slider2" src="./assets/images/2ca.jpg" alt="">
-    <img class="mobile-background animated slideInRight" id="slider3" src="./assets/images/3ca.jpg" alt="">
-    <img class="mobile-background animated slideInRight"  id="slider4" src="./assets/images/4ca.jpg" alt="">
-    <img class="mobile-background animated slideInRight" id="slider5" src="./assets/images/5ca.jpg" alt="">
-    <img class="mobile-background animated slideInRight" id="slider6" src="./assets/images/6ca.jpg" alt="">
-    <img class="mobile-background animated slideInRight" id="slider7" src="./assets/images/7ca.jpg" alt="">
+
+    <img class="mobile-background animated slideInRight" width="100%" id="slider1" src="./assets/images/1.jpg" alt="">
+    <img class="mobile-background animated slideInRight" width="100%" id="slider2" src="./assets/images/2.jpg" alt="">
+    <img class="mobile-background animated slideInRight" width="100%" id="slider3" src="./assets/images/3.jpg" alt="">
+    <img class="mobile-background animated slideInRight" width="100%" id="slider4" src="./assets/images/4.jpg" alt="">
+    <img class="mobile-background animated slideInRight" width="100%" id="slider5" src="./assets/images/5.jpg" alt="">
+    <img class="mobile-background animated slideInRight" width="100%" id="slider6" src="./assets/images/6.jpg" alt="">
+    <img class="mobile-background animated slideInRight" width="100%"  id="slider7" src="./assets/images/7.jpg" alt="">
 <!--    <img class="desktop-background" id="slider1" src="./assets/images/carouselD/1.jpg" alt="">
     <img class="desktop-background" id="slider2" src="./assets/images/carouselD/2.jpg" alt="">
     <img class="desktop-background" id="slider3" src="./assets/images/carouselD/3.jpg" alt="">
@@ -165,13 +166,15 @@
     </div>
 </div>
 
-
 <div class="section-about" id="section-about">
+    <h2 style="display: none;" class="h2-desktop h2About">ОПИСАНИЕ</h2>
     <div class="container">
-        <h2 class="mobile-only"><span>ОБЩЕЕ </span> ОПИСАНИЕ</h2>
+
         <div class="main-info">
+            <h2 style="margin:25px 0;" class="mobile-only"><span>ОБЩЕЕ </span> ОПИСАНИЕ</h2>
             <div class="left-part">
-                <img class="dotted-image" src="./assets/images/brain.svg" alt="">
+                <img class="dotted-image mobile-only" src="./assets/images/brain.svg" alt="">
+                <img class="dotted-image dotted-imagedesc" style="display: none" src="./assets/images/brainDesc.svg">
                 <div class="left-part__container">
                     <p>OMV — это решение видеораспознавания с интеллектуальными модулями. Собственная разработка иновационной Российской лаборатории OmegaLab</p>
                 </div>
@@ -293,13 +296,15 @@
             <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
             <img class="head-container__dotts d-head-container__dotts mobile-only" src="" alt="">
         </div>
+        <h2 style="display: none;" class="h2-desktop h2Industry">ИНДУСТРИИ</h2>
         <div class="products-list">
+
             <div class="product product1"><a href="usage-prom-and-building.html" >
-                <div class="bar"><p>Промышленность и строительство</p></div>
+                <div class="bar"><p class="barFont1">Промышленность и строительство</p></div>
             </a>
             </div>
             <div class="product product2"><a href="usage-safety.html" >
-                <div class="bar"><p>Общественная безопасность</p></div>
+                <div class="bar"><p class="barFont1">Общественная безопасность</p></div>
             </a>
             </div>
             <div class="product product3"><a href="usage-educational-houses.html" >
@@ -337,9 +342,9 @@
 </div>
 
 
-<div class="integrationStart"></div>
 
 <div class="section-intagration">
+    <h2 style="display: none;" class="h2-desktop h2Integration">ИНТЕГРАЦИЯ</h2>
     <div class="container">
         <div class="head-container">
             <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
@@ -384,13 +389,16 @@
 <div class="section-possibilities">
     <div class="container">
         <div class="head-container">
-            <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
-            <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
-            <h2 class="while-no-empty">ВОЗМОЖНОСТИ</h2>
-            <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
-            <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
+            <img class="head-container__dotts m-head-container__dotts mobile-only " src="./assets/images/dotts.svg" alt="">
+            <img class="head-container__dotts d-head-container__dotts mobile-only" src="" alt="">
+            <h2 class="while-no-empty mobile-only">ВОЗМОЖНОСТИ</h2>
+            <img class="head-container__dotts m-head-container__dotts mobile-only  " src="./assets/images/dotts.svg" alt="">
+            <img class="head-container__dotts d-head-container__dotts mobile-only" src="" alt="">
         </div>
-        <img class="possibilities-img" src="./assets/images/possibilities.jpg" alt="">
+        <h2 style="display: none" class="h2Possibilities h2-desktop">ВОЗМОЖНОСТИ</h2>
+
+        <img  class="possibilities-img mobile-only" src="./assets/images/possibilities.jpg" alt="">
+        <img style="display: none" class="possibilities-img posImgDesc" src="./assets/images/2pos.jpg" alt="">
         <div class="possibilities-list">
             <div class="possibilities-list__container">
                 <p>Детектирование оставленных предметов</p>
@@ -406,6 +414,8 @@
     </div>
 </div>
     <div class="container">
+        <h2 style="display: none" class="h2Portfolio h2-desktop">ПОРТФОЛИО</h2>
+
         <div class="head-container">
 
             <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
@@ -441,7 +451,7 @@
                 <img src="./assets/images/huawei.png" alt="">
             </div>
         </div>
-            <img class="dottsportfolio" style="position: absolute; top: 350px; right: -30px; margin-top: 20px; width: 40%" src="../assets/images/точки.svg">
+            <img class="dottsportfolio" style="position: absolute; top: 400px; right: -30px; margin-top: 50px; width: 40%" src="../assets/images/points.svg">
     </div>
 </div>
 
@@ -453,15 +463,20 @@
     <div class="head-container">
         <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
         <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
-        <h2 class="while-no-empty">КОНТАКТЫ</h2>
+        <h2 class="while-no-empty mobile-only">КОНТАКТЫ</h2>
         <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
         <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
     </div>
     <div class="basement">
+        <h2 style="display: none" class="h2Contacts h2-desktop">КОНТАКТЫ</h2>
         <div class="image-part">
-            <img style="height: 65vh" src="./assets/images/footer-image.jpg" alt="">
+            <img class="mobile-only" src="./assets/images/footer-image.jpg" alt="">
+            <img class="footerImgDesc" style="display: none" src="./assets/images/1con.jpg" alt="">
         </div>
         <div class="footer-part">
+
+
+
             <div class="left-part">
                 <div class="contact">
                     <p>Руководитель проекта
@@ -497,7 +512,7 @@
                 </div>
                 <div class="green-square-wrapper">
                     <div class="green-square"></div>
-                    <p>Донской <br> Государственный <br> Технический Университет</p>
+                    <p>Донской <br> Государственный <br> Технический<br> Университет</p>
                 </div>
             </div>
         </div>
@@ -509,6 +524,127 @@
 
 
 </div>
+<script>
+
+    let firstSlide =  document.getElementsByClassName('mobile-background')[0];
+    let secondSlide =  document.getElementsByClassName('mobile-background')[1];
+    let thirdSlide =  document.getElementsByClassName('mobile-background')[2];
+    let fourthSlide =  document.getElementsByClassName('mobile-background')[3];
+    let fifthSlide =  document.getElementsByClassName('mobile-background')[4];
+    let sixthSlide =  document.getElementsByClassName('mobile-background')[5];
+    let seventhSlide =  document.getElementsByClassName('mobile-background')[6];
+
+
+
+
+
+    document.getElementsByClassName('particle')[0].classList.add('-current-particle');
+    firstSlide.classList.add('-display-block');
+    let num = 0;
+
+    function next() {
+        document.getElementsByClassName('particle')[num].classList.remove('-current-particle');
+        num++;
+        if (num>6) {
+            num = 0;
+        }
+        switch (num) {
+            case 0: seventhSlide.classList.remove('-display-block');
+                firstSlide.classList.add('-display-block');
+                document.getElementsByClassName('particle')[num].classList.add('-current-particle');
+                document.getElementsByClassName('main-name')[0].innerHTML = '<h1>ВИДЕОАНАЛИТИКА OMV</h1>'
+                break;
+            case 1: firstSlide.classList.remove('-display-block');
+                secondSlide.classList.add('-display-block');
+                document.getElementsByClassName('particle')[num].classList.add('-current-particle');
+                document.getElementsByClassName('main-name')[0].innerHTML = '<h1>ИДЕНТИФИКАЦИЯ ЛИЦ</h1>'
+                break;
+            case 2: secondSlide.classList.remove('-display-block');
+                thirdSlide.classList.add('-display-block');
+                document.getElementsByClassName('particle')[num].classList.add('-current-particle');
+                document.getElementsByClassName('main-name')[0].innerHTML = '<h1 style="word-wrap: normal;">ДЕТЕКТИРОВАНИЕ ОБЪЕКТОВ</h1>'
+                break;
+            case 3: thirdSlide.classList.remove('-display-block');
+                fourthSlide.classList.add('-display-block');
+                document.getElementsByClassName('particle')[num].classList.add('-current-particle');
+                document.getElementsByClassName('main-name')[0].innerHTML = '<h1>ЗАПРЕЩЕННЫЕ ЗОНЫ</h1>'
+                break;
+            case 4: fourthSlide.classList.remove('-display-block');
+                fifthSlide.classList.add('-display-block');
+                document.getElementsByClassName('particle')[num].classList.add('-current-particle');
+                document.getElementsByClassName('main-name')[0].innerHTML = '<h1>ДЕТЕКТИРОВАНИЕ ТРАНСТПОРТА</h1>'
+                break;
+            case 5: fifthSlide.classList.remove('-display-block');
+                sixthSlide.classList.add('-display-block');
+                document.getElementsByClassName('particle')[num].classList.add('-current-particle');
+                document.getElementsByClassName('main-name')[0].innerHTML = '<h1>ИДЕНТИФИКАЦИЯ НОМЕРА</h1>'
+                break;
+            case 6:sixthSlide.classList.remove('-display-block');
+                seventhSlide.classList.add('-display-block');
+                document.getElementsByClassName('particle')[num].classList.add('-current-particle');
+                document.getElementsByClassName('main-name')[0].innerHTML = '<h1>ОБЕСПЕЧЕНИЕ БЕЗОПАСТНОСТИ</h1>'
+                break;
+        }
+    }
+    function prev() {
+        document.getElementsByClassName('particle')[num].classList.remove('-current-particle');
+        num--;
+        if (num<0) {
+            num = 6;
+        }
+        switch (num) {
+            case 0: secondSlide.classList.remove('-display-block');
+                firstSlide.classList.add('-display-block');
+                document.getElementsByClassName('particle')[num].classList.add('-current-particle');
+                document.getElementsByClassName('main-name')[0].innerHTML = '<h1>ВИДЕОАНАЛИТИКА OMV</h1>'
+                break;
+            case 1: thirdSlide.classList.remove('-display-block');
+                secondSlide.classList.add('-display-block');
+                document.getElementsByClassName('particle')[num].classList.add('-current-particle');
+                document.getElementsByClassName('main-name')[0].innerHTML = '<h1>ИДЕНТИФИКАЦИЯ ЛИЦ</h1>'
+                break;
+            case 2: fourthSlide.classList.remove('-display-block');
+                thirdSlide.classList.add('-display-block');
+                document.getElementsByClassName('particle')[num].classList.add('-current-particle');
+                document.getElementsByClassName('main-name')[0].innerHTML = '<h1>ДЕТЕКТИРОВАНИЕ ОБЪЕКТОВ</h1>'
+                break;
+            case 3:fifthSlide.classList.remove('-display-block');
+                fourthSlide.classList.add('-display-block');
+                document.getElementsByClassName('particle')[num].classList.add('-current-particle');
+                document.getElementsByClassName('main-name')[0].innerHTML = '<h1>ЗАПРЕЩЕННЫЕ ЗОНЫ</h1>'
+                break;
+            case 4: sixthSlide.classList.remove('-display-block');
+                fifthSlide.classList.add('-display-block');
+                document.getElementsByClassName('particle')[num].classList.add('-current-particle');
+                document.getElementsByClassName('main-name')[0].innerHTML = '<h1>ДЕТЕКТИРОВАНИЕ ТРАНСТПОРТА</h1>'
+                break;
+            case 5: seventhSlide.classList.remove('-display-block');
+                sixthSlide.classList.add('-display-block');
+                document.getElementsByClassName('particle')[num].classList.add('-current-particle');
+                document.getElementsByClassName('main-name')[0].innerHTML = '<h1>ИДЕНТИФИКАЦИЯ НОМЕРА</h1>'
+                break;
+            case 6: firstSlide.classList.remove('-display-block');
+                seventhSlide.classList.add('-display-block');
+                document.getElementsByClassName('particle')[num].classList.add('-current-particle');
+                document.getElementsByClassName('main-name')[0].innerHTML = '<h1>ОБЕСПЕЧЕНИЕ БЕЗОПАСТНОСТИ</h1>'
+                break;
+        }
+    }
+
+
+
+
+    function particleClick() {
+        document.getElementsByClassName('-gidisplay-block')[0].classList.remove('-display-block');
+        document.getElementsByClassName('-current-particle')[0].classList.remove('-current-particle');
+        slides[num].classList.add('-display-block');
+        document.getElementsByClassName('particle')[num].classList.add('-current-particle');
+    }
+    let slides = [firstSlide, secondSlide, thirdSlide, fourthSlide, fifthSlide, sixthSlide, seventhSlide];
+    setInterval(next, 7000);
+
+
+</script>
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

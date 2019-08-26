@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Использование</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/png">
 </head>
-<body onscroll="usageEmpty()">
+<body>
 <header class="header-mobile">
     <div class="logo-part">
         <a class="menu-btn">
@@ -221,6 +222,7 @@
             <img class="head-container__dotts m-head-container__dotts mobile-only " src="./assets/images/dotts.svg" alt="">
             <img class="head-container__dotts d-head-container__dotts" src="./assets/images/Точки.svg" alt="">
         </div>
+        <h2 style="display: none;" class="h2-desktop h2Integration2 h2usage">ИНТЕГРАЦИЯ</h2>
         <div class="products-list">
             <div class="product product10">
                 <div class="bar"><p>Системы видеонаблюдения</p></div>
@@ -268,60 +270,70 @@
 
 
 <div class="section-contacts" id="contacts">
-
-        <div class="head-container">
-            <img class="head-container__dotts m-head-container__dotts mobile-only " src="./assets/images/dotts.svg" alt="">
-            <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
-            <h2 class="mobile-only">КОНТАКТЫ</h2>
-            <img class="head-container__dotts m-head-container__dotts mobile-only " src="./assets/images/dotts.svg" alt="">
-            <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
+    <div class="head-container">
+        <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
+        <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
+        <h2 class="while-no-empty mobile-only">КОНТАКТЫ</h2>
+        <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
+        <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
+    </div>
+    <div class="basement">
+        <h2 style="display: none" class="h2Contacts h2-desktop">КОНТАКТЫ</h2>
+        <div class="image-part">
+            <img class="mobile-only" src="./assets/images/footer-image.jpg" alt="">
+            <img class="footerImgDesc" style="display: none" src="./assets/images/1con.jpg" alt="">
         </div>
-        <div class="basement">
-            <div class="image-part">
-                <img src="./assets/images/footer-image.jpg" alt="">
-            </div>
-            <div class="footer-part">
-                <div class="left-part">
-                    <div class="contact">
-                        <p>Руководитель проекта
-                            <br>
-                            <a href="">soka@gkomega.ru</a>
-                            <br>
-                            <a href="">+7 (921) 913-26-69</a>
-                        </p>
-                    </div>
-                    <div class="contact">
-                        <p>Технический директор
-                            <br>
-                            <a href="">kobak@gkomega.ru</a>
-                            <br>
-                            <a href="">+7 (904) 637-01-37</a>
-                        </p>
-                    </div>
-                    <div class="contact">
-                        <p>191124, Санкт-Петербург, <br> Синопская набережная, дом 52</p>
-                    </div>
-                    <div class="social-networks-links">
+        <div class="footer-part">
 
-                        <!--<a href=""><img src="./assets/images/vk.svg" alt=""></a>-->
-                        <a href=""><img src="./assets/images/instagram.svg" alt=""></a>
-                        <a href=""><img src="./assets/images/twitter.svg" alt=""></a>
-                        <a href=""><img src="./assets/images/youtube.svg" alt=""></a>
-                    </div>
+
+
+            <div class="left-part">
+                <div class="contact">
+                    <p>Руководитель проекта
+                        <br>
+                        <a href="">soka@gkomega.ru</a>
+                        <br>
+                        <a href="">+7 (921) 913-26-69</a>
+                    </p>
                 </div>
-                <div class="right-part">
-                    <p class="green-sign">НАШИ ПАРТНЕРЫ</p>
-                    <p>Группа компаний <br> «ОМЕГА» </p>
+                <div class="contact">
+                    <p>Технический директор
+                        <br>
+                        <a href="">kobak@gkomega.ru</a>
+                        <br>
+                        <a href="">+7 (904) 637-01-37</a>
+                    </p>
+                </div>
+                <div class="contact">
+                    <p>191124, Санкт-Петербург, <br> Синопская набережная, <br class="-display-block"> дом 52</p>
+                </div>
+                <div class="social-networks-links">
+                    <!-- <a href=""><img src="./assets/images/vk.svg" alt=""></a>-->
+                    <a href=""><img src="./assets/images/instagram.svg" alt=""></a>
+                    <a href=""><img src="./assets/images/twitter.svg" alt=""></a>
+                    <a href=""><img src="./assets/images/youtube.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="right-part">
+                <p class="green-sign">НАШИ ПАРТНЕРЫ</p>
+                <div class="green-square-wrapper">
                     <div class="green-square"></div>
-                    <p>Донской <br> Государственный <br> Технический Университет</p>
+                    <p>Группа компаний <br> «ОМЕГА» </p>
+                </div>
+                <div class="green-square-wrapper">
+                    <div class="green-square"></div>
+                    <p>Донской <br> Государственный <br> Технический<br> Университет</p>
                 </div>
             </div>
         </div>
+    </div>
 </div>
 
 
+
+
 <script>
-    function usageEmpty() {
+    /*function usageEmpty() {
         if (document.documentElement.scrollTop > document.getElementsByClassName('section-building-features')[0].offsetTop - 170) {
             document.getElementsByClassName('empty-place')[0].innerHTML = '<p>ТЕХНОЛОГИИ</p>';
         }
@@ -335,7 +347,7 @@
             document.getElementsByClassName('empty-place')[0].innerHTML = '<p>КОНТАКТЫ</p>';
         }
 
-    }
+    }*/
 </script>
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"

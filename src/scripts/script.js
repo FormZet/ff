@@ -28,9 +28,37 @@ $("body").on('click', '[href*="#"]', function(e){
     $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
     e.preventDefault();
 });
-function onVideoClick(theLink) {
-    document.getElementById("video_pop").innerHTML = "<video autoplay muted loop id=\"the_Video\"><source src=\""+theLink+"\" type=\"video/mp4\"></video>";
-    document.getElementById("video_pop").style.display="block";
+function onVideoClick1(theLink) {
+    document.getElementById("video_pop").innerHTML = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/MGJojDqbrMc?autoplay=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+    document.getElementById("video_pop").style.display="flex";
+}
+function onVideoClick2(theLink) {
+    document.getElementById("video_pop").innerHTML = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/-dC7FXhO5s4?autoplay=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+    document.getElementById("video_pop").style.display="flex";
+}
+function onVideoClick3(theLink) {
+    document.getElementById("video_pop").innerHTML = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/eJ4d2NKrk0o?autoplay=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+    document.getElementById("video_pop").style.display="flex";
+}
+function onVideoClick4(theLink) {
+    document.getElementById("video_pop").innerHTML = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/j3RFQOSuxNE?autoplay=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+    document.getElementById("video_pop").style.display="flex";
+}
+function onVideoClick5(theLink) {
+    document.getElementById("video_pop").innerHTML = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/SwaHcIMdWHg?autoplay=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+    document.getElementById("video_pop").style.display="flex";
+}
+function onVideoClick6(theLink) {
+    document.getElementById("video_pop").innerHTML = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/1-GlsQUj-J0?autoplay=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+    document.getElementById("video_pop").style.display="flex";
+}
+function onVideoClick7(theLink) {
+    document.getElementById("video_pop").innerHTML = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ZCdw1WeZ0iw?autoplay=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+    document.getElementById("video_pop").style.display="flex";
+}
+function onVideoClick8(theLink) {
+    document.getElementById("video_pop").innerHTML = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/4F1Ld4Y1lRU?autoplay=1   \" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+    document.getElementById("video_pop").style.display="flex";
 }
 
 function onPopClick() {
@@ -43,101 +71,44 @@ function onPopClick() {
 
 
 
-document.getElementsByClassName('particle')[0].classList.add('-current-particle');
 
-let firstSlide =  document.getElementsByClassName('mobile-background')[0];
-let secondSlide =  document.getElementsByClassName('mobile-background')[1];
-let thirdSlide =  document.getElementsByClassName('mobile-background')[2];
-let fourthSlide =  document.getElementsByClassName('mobile-background')[3];
-let fifthSlide =  document.getElementsByClassName('mobile-background')[4];
-let sixthSlide =  document.getElementsByClassName('mobile-background')[5];
-let seventhSlide =  document.getElementsByClassName('mobile-background')[6];
 
-firstSlide.classList.add('-display-block');
-let num = 0;
-function next() {
-    document.getElementsByClassName('particle')[num].classList.remove('-current-particle');
-    num++;
-    if (num>6) {
-        num = 0;
+
+
+
+
+
+
+
+
+
+function emptyarrow() {
+    if (document.documentElement.scrollTop > document.getElementsByClassName('section-about')[0].offsetTop + 350) {
+        document.getElementsByClassName('arrowTopDiv')[0].innerHTML = '<img style="cursor: pointer;" class="arrowTopScroll animated rollOut" src="../assets/images/arrowTop.svg">';
     }
-    switch (num) {
-        case 0: seventhSlide.classList.remove('-display-block');
-            firstSlide.classList.add('-display-block');
-            document.getElementsByClassName('particle')[num].classList.add('-current-particle');
-            break;
-        case 1: firstSlide.classList.remove('-display-block');
-            secondSlide.classList.add('-display-block');
-            document.getElementsByClassName('particle')[num].classList.add('-current-particle');
-            break;
-        case 2: secondSlide.classList.remove('-display-block');
-            thirdSlide.classList.add('-display-block');
-            document.getElementsByClassName('particle')[num].classList.add('-current-particle');
-            break;
-        case 3: thirdSlide.classList.remove('-display-block');
-            fourthSlide.classList.add('-display-block');
-            document.getElementsByClassName('particle')[num].classList.add('-current-particle');
-            break;
-        case 4: fourthSlide.classList.remove('-display-block');
-            fifthSlide.classList.add('-display-block');
-            document.getElementsByClassName('particle')[num].classList.add('-current-particle');
-            break;
-        case 5: fifthSlide.classList.remove('-display-block');
-            sixthSlide.classList.add('-display-block');
-            document.getElementsByClassName('particle')[num].classList.add('-current-particle');
-            break;
-        case 6:sixthSlide.classList.remove('-display-block');
-            seventhSlide.classList.add('-display-block');
-            document.getElementsByClassName('particle')[num].classList.add('-current-particle');
-            break;
+    if (document.documentElement.scrollTop < document.getElementsByClassName('section-about')[0].offsetTop + 350) {
+        document.getElementsByClassName('arrowTopDiv')[0].innerHTML ='';
     }
 }
-function prev() {
-    document.getElementsByClassName('particle')[num].classList.remove('-current-particle');
-    num--;
-    if (num<0) {
-        num = 6;
-    }
-    switch (num) {
-        case 0: secondSlide.classList.remove('-display-block');
-            firstSlide.classList.add('-display-block');
-            document.getElementsByClassName('particle')[num].classList.add('-current-particle');
-            break;
-        case 1: thirdSlide.classList.remove('-display-block');
-            secondSlide.classList.add('-display-block');
-            document.getElementsByClassName('particle')[num].classList.add('-current-particle');
-            break;
-        case 2: fourthSlide.classList.remove('-display-block');
-            thirdSlide.classList.add('-display-block');
-            document.getElementsByClassName('particle')[num].classList.add('-current-particle');
-            break;
-        case 3:fifthSlide.classList.remove('-display-block');
-            fourthSlide.classList.add('-display-block');
-            document.getElementsByClassName('particle')[num].classList.add('-current-particle');
-            break;
-        case 4: sixthSlide.classList.remove('-display-block');
-            fifthSlide.classList.add('-display-block');
-            document.getElementsByClassName('particle')[num].classList.add('-current-particle');
-            break;
-        case 5: seventhSlide.classList.remove('-display-block');
-            sixthSlide.classList.add('-display-block');
-            document.getElementsByClassName('particle')[num].classList.add('-current-particle');
-            break;
-        case 6: firstSlide.classList.remove('-display-block');
-            seventhSlide.classList.add('-display-block');
-            document.getElementsByClassName('particle')[num].classList.add('-current-particle');
-            break;
-    }
-}
-function particleClick() {
-    document.getElementsByClassName('-display-block')[0].classList.remove('-display-block');
-    document.getElementsByClassName('-current-particle')[0].classList.remove('-current-particle');
-    slides[num].classList.add('-display-block');
-    document.getElementsByClassName('particle')[num].classList.add('-current-particle');
-}
-let slides = [firstSlide, secondSlide, thirdSlide, fourthSlide, fifthSlide, sixthSlide, seventhSlide];
-setInterval(next, 7000);
-function empty() {
+$('.arrowTopDiv').on('click', function() {
+    document.documentElement.scrollTop = 0;
+});
+
+
+$('.next').on('click', function() {
+    $('.mobile-background').removeClass('slideInLeft')
+    $('.mobile-background').addClass('slideInRight')
+});
+$('.prev').on('click', function() {
+    $('.mobile-background').removeClass('slideInRight')
+    $('.mobile-background').addClass('slideInLeft')
+});
+
+
+
+
+
+/*function empty() {
     if (document.documentElement.scrollTop > document.getElementsByClassName('section-about')[0].offsetTop - 45) {
         document.getElementsByClassName('empty-place')[0].innerHTML = '<p>ОПИСАНИЕ</p>';
     }
@@ -160,6 +131,6 @@ function empty() {
         document.getElementsByClassName('empty-place')[0].innerHTML = '<p>КОНТАКТЫ</p>';
     }
 
-}
+}*/
 
 

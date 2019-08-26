@@ -5,10 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <title>Портфолио</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/png">
 </head>
-<body onscroll="portEmpty()">
+<body>
 <div class="max-width-container">
     <header class="header-mobile">
         <div class="logo-part">
@@ -100,7 +101,7 @@
     </header>
 
     <div class="section-main-possibilities">
-        <img class="cars" src="./assets/images/product-bg-10.jpg" alt="">
+        <img class="cars" src="./assets/images/Port.jpg" alt="">
         <div class="short-desc">
             <div class="paragraph">
                 <p><span>ВИДЕОАНАЛИТИКА OMW</span><br>собственная разработка<br>российской иновационной лаборатории OmegaLab
@@ -121,38 +122,78 @@
 
             <div id="video_pop" onclick="onPopClick()"></div>
             <div class="vidos">
-            <div class="videoBlank"><p>ИДЕНТИФИКАЯ ЛИЦ</p></div>
+            <div class="videoBlank"><p>ОПРЕДЕЛЕНИЕ ЧЕЛОВЕК</p></div>
             <video width="50%" poster="./assets/images/product-bg-5.jpg"
-                   onclick="onVideoClick('./assets/images/videoplayback.mp4');">
+                   onclick="onVideoClick1();">
 
             </video>
         </div>
 
                 <div id="video_pop" onclick="onPopClick()"></div>
             <div class="vidos">
-                <div class="videoBlank"><p>ИДЕНТИФИКАЯ ЛИЦ</p></div>
+                <div class="videoBlank"><p>ИДЕНТИФИКАЯ ЧЕЛОВЕКА</p></div>
                 <video width="50%" poster="./assets/images/product-bg-5.jpg"
-                       onclick="onVideoClick('./assets/images/videoplayback.mp4');">
+                       onclick="onVideoClick2();">
 
                 </video>
             </div>
-        </div>
-            <div class="videoCol">
 
-                    <div id="video_pop" onclick="onPopClick()"></div>
+
+
+                <div id="video_pop" onclick="onPopClick()"></div>
                 <div class="vidos">
-                    <div class="videoBlank"><p>ИДЕНТИФИКАЯ ЛИЦ</p></div>
+                    <div class="videoBlank"><p>ИДЕНТИФИКАЯ НА ПРОХОДНОЙ</p></div>
                     <video width="50%" poster="./assets/images/product-bg-5.jpg"
-                           onclick="onVideoClick('./assets/images/videoplayback.mp4');">
+                           onclick="onVideoClick3();">
 
                     </video>
                 </div>
 
-                    <div id="video_pop" onclick="onPopClick()"></div>
+                <div id="video_pop" onclick="onPopClick()"></div>
                 <div class="vidos">
-                    <div class="videoBlank"><p>ИДЕНТИФИКАЯ ЛИЦ</p></div>
+                    <div class="videoBlank"><p>ДЕТЕКТИРОВАНИЕ СПЕЦОДЕЖДЫ</p></div>
                     <video width="50%" poster="./assets/images/product-bg-5.jpg"
-                           onclick="onVideoClick('./assets/images/videoplayback.mp4');">
+                           onclick="onVideoClick4();">
+
+                    </video>
+                </div>
+        </div>
+            <div class="videoCol">
+
+                <div id="video_pop" onclick="onPopClick()"></div>
+                <div class="vidos">
+                    <div class="videoBlank"><p>ДЕТЕКТИРОВАНИЕ ПЕРИМЕТРА</p></div>
+                    <video width="50%" poster="./assets/images/product-bg-5.jpg"
+                           onclick="onVideoClick5();">
+
+                    </video>
+                </div>
+
+                <div id="video_pop" onclick="onPopClick()"></div>
+                <div class="vidos">
+                    <div class="videoBlank"><p>ДЕТЕКТИРОВАНИЕ ОБЪЕКТОВ</p></div>
+                    <video width="50%" poster="./assets/images/product-bg-5.jpg"
+                           onclick="onVideoClick6();">
+
+                    </video>
+                </div>
+
+
+
+                <div id="video_pop" onclick="onPopClick()"></div>
+                <div class="vidos">
+                    <div class="videoBlank"><p>ДЕТЕКТИРОВАНИЕ АВТОМОБИЛЕЙ</p></div>
+                    <video width="50%" poster="./assets/images/product-bg-5.jpg"
+                           onclick="onVideoClick7();">
+
+                    </video>
+                </div>
+
+                <div id="video_pop" onclick="onPopClick()"></div>
+                <div class="vidos">
+                    <div class="videoBlank"><p>ДЕТЕКТОР ДВИЖЕНИЙ</p></div>
+                    <video width="50%" poster="./assets/images/product-bg-5.jpg"
+                           onclick="onVideoClick8();">
 
                     </video>
                 </div>
@@ -187,8 +228,8 @@
         </div>
         <div class="presentation" style="margin-bottom: 15px; position: relative">
 
-            <img src="./assets/images/1ca.jpg" class="presentaionImg">
-            <img src="./assets/images/arrow-down.png" class="arrowdownload">
+            <img src="./assets/images/port2.jpg" class="presentaionImg">
+            <a href="./assets/images/materials.rar" style="cursor: pointer;" download ><img src="./assets/images/arrow-present.png" class="arrowdownload"></a>
             <div class="presentaitonTxt"><p>Демонстрационные презентации,
                 которые<br>смогут подробнеерассказать Вам об OMV</p></div>
             <div class="presentaionText videoBlank mobile-only"><p>Демонстрационные презентации,<br>
@@ -200,15 +241,20 @@
         <div class="head-container">
             <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
             <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
-            <h2 class="while-no-empty">КОНТАКТЫ</h2>
+            <h2 class="while-no-empty mobile-only">КОНТАКТЫ</h2>
             <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
             <img class="head-container__dotts d-head-container__dotts " src="./assets/images/Точки.svg" alt="">
         </div>
         <div class="basement">
+            <h2 style="display: none" class="h2Contacts h2-desktop">КОНТАКТЫ</h2>
             <div class="image-part">
-                <img style="height: 65vh" src="./assets/images/footer-image.jpg" alt="">
+                <img class="mobile-only" src="./assets/images/footer-image.jpg" alt="">
+                <img class="footerImgDesc" style="display: none" src="./assets/images/1con.jpg" alt="">
             </div>
             <div class="footer-part">
+
+
+
                 <div class="left-part">
                     <div class="contact">
                         <p>Руководитель проекта
@@ -244,7 +290,7 @@
                     </div>
                     <div class="green-square-wrapper">
                         <div class="green-square"></div>
-                        <p>Донской <br> Государственный <br> Технический Университет</p>
+                        <p>Донской <br> Государственный <br> Технический<br> Университет</p>
                     </div>
                 </div>
             </div>
@@ -253,7 +299,7 @@
 
 </div>
 <script>
-    function portEmpty() {
+   /* function portEmpty() {
         if (document.documentElement.scrollTop > document.getElementsByClassName('videoCol')[0].offsetTop + 300) {
             document.getElementsByClassName('empty-place')[0].innerHTML = '<p>ВИДЕОРОЛИКИ</p>';
         }
@@ -266,7 +312,7 @@
         if (document.documentElement.scrollTop > document.getElementsByClassName('section-contacts')[0].offsetTop - 110) {
             document.getElementsByClassName('empty-place')[0].innerHTML = '<p>КОНТАКТЫ</p>';
         }
-    }
+    }*/
 </script>
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"

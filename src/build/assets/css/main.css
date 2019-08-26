@@ -313,6 +313,7 @@
     display: none;
     width: 100%; }
   .section-main .mobile-background {
+    z-index: -20;
     width: 100%;
     display: none; }
   .section-main .-display-block {

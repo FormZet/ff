@@ -29,7 +29,6 @@ body {
   display: block;
 }
 .header-desktop{
-  background-color: white;
 }
 .overlay {
 
@@ -47,7 +46,18 @@ body {
   transition: .3s all;
 }
 
-
+.arrowTopScroll{
+  position: fixed;
+  display: none;
+  width: 5%;
+  right: 5%;
+  bottom: 5%;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+}
+.technology{
+  margin: 0 auto;
+}
 /* Стили для модальных окон */
 .modal {
 
@@ -115,6 +125,9 @@ body {
     padding-left: 2px;
     margin-right: 30px;
   }
+}
+.basement{
+  margin-top: 150px;
 }
 .integrationStart{
   height: 15px;

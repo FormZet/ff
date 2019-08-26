@@ -36,17 +36,17 @@
         max-width: 700px;
       }
       .write-us {
+        text-decoration: none;
         cursor: pointer;
         margin: 0 auto!important;
         color: #8fc9c9;
         background-color: white !important;
-        border: 1px solid #8fc9c9 !important;
+        border: 2px solid #8fc9c9 !important;
         transition: .3s;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 220px;
-        height: 60px;
+
         border-radius: 2px;
         &:hover {
           background-color: #8fc9c9!important;
@@ -136,4 +136,7 @@
       }
     }
   }
+}
+.js-open-modal{
+  padding: 15px 55px;
 }

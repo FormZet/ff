@@ -34,14 +34,16 @@
         width: 100%;
         color: white;
         text-align: center;
-        height: 35px;
+        height: 55px;
         padding: 7px;
         z-index: 2;
         background: rgba(89, 101, 108, 0.75);
         p {
           position: relative;
           z-index: 3;
-          margin: 0;
+          margin: 0 auto;
+          font-size: 22px;
+          top:20%;
         }
 
       }
