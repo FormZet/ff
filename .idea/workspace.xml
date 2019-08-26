@@ -4,77 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/styles/components/section-portfolio.scss" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a8efd17-a7b1-49a2-ab33-7dd7fbed7df2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/about-company.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/about-company.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/development.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/development.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/1b.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/1b.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/1e.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/1e.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/1h.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/1h.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/1p.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/1p.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/1r.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/1r.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/1s.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/1s.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/1sc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/1sc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/1sh.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/1sh.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/1st.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/1st.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/2b.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/2b.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/2e.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/2e.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/2h.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/2h.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/2p.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/2p.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/2r.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/2r.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/2s.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/2s.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/2sc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/2sc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/2sh.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/2sh.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/2st.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/2st.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/3b.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/3b.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/3e.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/3e.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/3h.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/3h.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/3p.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/3p.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/3r.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/3r.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/3s.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/3s.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/3sc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/3sc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/3sh.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/3sh.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/3st.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/3st.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/4b.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/4b.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/4p.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/4p.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/4r.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/4r.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/4s.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/4s.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/4sc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/4sc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/4st.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/4st.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/5e.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/5e.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/5p.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/5p.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/5r.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/5r.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/5s.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/5s.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/5sc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/5sc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/6e.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/6e.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/6p.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/6p.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/6r.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/6r.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/6s.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/6s.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/6sc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/6sc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/7e.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/7e.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/7r.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/7r.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/7sc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/7sc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/8p.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/8p.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/8sc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/8sc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/9p.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/9p.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/portfolio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/possibilities.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/possibilities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/about-company.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/about-company.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/media.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/our-partners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/our-partners.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/section-portfolio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/section-portfolio.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usage-buisness.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/usage-buisness.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usage-educational-houses.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/usage-educational-houses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usage-events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/usage-events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usage-hotels.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/usage-hotels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usage-prom-and-building.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/usage-prom-and-building.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usage-retail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/usage-retail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usage-safety.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/usage-safety.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usage-smart-city.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/usage-smart-city.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usage-smart-house.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/usage-smart-house.html" afterDir="false" />
-    </list>
+    <list default="true" id="7a8efd17-a7b1-49a2-ab33-7dd7fbed7df2" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -438,12 +368,12 @@
       <workItem from="1566604547002" duration="304000" />
       <workItem from="1566760748119" duration="4216000" />
       <workItem from="1566811842619" duration="2967000" />
-      <workItem from="1566817819468" duration="17899000" />
+      <workItem from="1566817819468" duration="18066000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220719000" />
+    <option name="totallyTimeSpent" value="220886000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -456,7 +386,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="1" side_tool="true" />
