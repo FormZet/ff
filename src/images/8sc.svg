@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW 2018 (64-Bit) -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40.3477mm" height="40.3477mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 9.86 9.86"
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="60mm" height="60mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21.77 21.77"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <style type="text/css">
    <![CDATA[
+    .str0 {stroke:#59656C;stroke-width:0.36;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
     .fil1 {fill:#59656C}
-    .fil0 {fill:#59656C;fill-rule:nonzero}
    ]]>
   </style>
  </defs>
  <g id="Слой_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_1571979952">
-   <path class="fil0" d="M4.93 0c1.36,0 2.59,0.55 3.49,1.44 0.89,0.89 1.44,2.12 1.44,3.49 0,1.36 -0.55,2.59 -1.44,3.49 -0.89,0.89 -2.12,1.44 -3.49,1.44 -1.36,0 -2.59,-0.55 -3.49,-1.44 -0.89,-0.89 -1.44,-2.12 -1.44,-3.49 0,-1.36 0.55,-2.59 1.44,-3.49 0.89,-0.89 2.12,-1.44 3.49,-1.44zm3.31 1.62c-0.85,-0.85 -2.02,-1.37 -3.31,-1.37 -1.29,0 -2.46,0.52 -3.31,1.37 -0.85,0.85 -1.37,2.02 -1.37,3.31 0,1.29 0.52,2.46 1.37,3.31 0.85,0.85 2.02,1.37 3.31,1.37 1.29,0 2.46,-0.52 3.31,-1.37 0.85,-0.85 1.37,-2.02 1.37,-3.31 0,-1.29 -0.52,-2.46 -1.37,-3.31z"/>
-   <path class="fil1" d="M4.93 1.74l0 0c0.09,0 0.61,0.07 0.6,0.16l-0.44 4.67c-0.01,0.09 -0.07,0.16 -0.16,0.16l-0 0c-0.09,0 -0.15,-0.07 -0.16,-0.16l-0.44 -4.67c-0.01,-0.09 0.51,-0.16 0.6,-0.16z"/>
-   <path class="fil1" d="M4.93 7.47c0.18,0 0.32,0.15 0.32,0.32 0,0.18 -0.15,0.32 -0.32,0.32 -0.18,0 -0.32,-0.15 -0.32,-0.32 0,-0.18 0.15,-0.32 0.32,-0.32z"/>
+  <g id="_4798213456">
+   <circle class="fil0 str0" cx="10.89" cy="10.89" r="7.14"/>
+   <g>
+    <path class="fil1" d="M10.89 6.16l0 0c0.13,0 0.9,0.11 0.89,0.24l-0.65 6.93c-0.01,0.13 -0.11,0.24 -0.24,0.24l-0 0c-0.13,0 -0.23,-0.11 -0.24,-0.24l-0.65 -6.93c-0.01,-0.13 0.76,-0.24 0.89,-0.24z"/>
+    <path class="fil1" d="M10.89 14.66c0.27,0 0.48,0.22 0.48,0.48 0,0.27 -0.22,0.48 -0.48,0.48 -0.27,0 -0.48,-0.22 -0.48,-0.48 0,-0.27 0.22,-0.48 0.48,-0.48z"/>
+   </g>
   </g>
+  <rect class="fil0" x="-0" width="21.77" height="21.77"/>
  </g>
 </svg>
