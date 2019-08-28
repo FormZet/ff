@@ -2,7 +2,7 @@
   overflow: hidden;
   margin-bottom: 300px;
   .r-n-d-container {
-    justify-content: space-between;
+    justify-content: space-around;
     .left-part {
       flex-direction: column;
       width: 47%;
@@ -20,8 +20,10 @@
       .dark-screen {
         text-align: right;
         background-color: $grey-blue;
+        width: 80%;
+        padding: 50px;
+        margin-left: auto;
         color: white;
-        padding: 60px 10% 60px 20%;
         font-size: 20px;
       }
     }
@@ -126,7 +128,7 @@
       max-width: 260px;
       img {
         margin: 0 auto;
-        max-width: 130px;
+        max-width: 160px;
         width: 70%;
         display: block;
         margin-bottom: 30px;
@@ -139,4 +141,7 @@
 }
 .js-open-modal{
   padding: 15px 55px;
+}
+.js-open-modal1{
+  padding: 0 !important;
 }

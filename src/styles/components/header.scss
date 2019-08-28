@@ -57,12 +57,12 @@
     background-color:#515e68;
 
     display: flex;
-    width: 914px;
+    width: 829px;
     height: 75px;
     align-items: center;
     justify-content: space-between;
     .mail-part {
-      width: 55px;
+      width: 65px;
       order: 2;
       height: 75px;
       background-color: $red;
@@ -76,9 +76,10 @@
       padding: 0;
 
       li {
+        font-size:12px;
         display: inline-block;
         height: 60px;
-        margin: 0 14px;
+        margin: 0 8px;
         padding: 20px 0;
         cursor: pointer;
         position: relative;

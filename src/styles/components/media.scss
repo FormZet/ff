@@ -68,9 +68,7 @@
   .m-head-container__dotts {
   display: none;
 }
-  .presentaitonTxt{
-    display: block;
-  }
+
   .carousel-switcher{
     top: 20%;
   }
@@ -234,7 +232,10 @@
 }
 @media screen and (min-width: 1024px) {
   .section-contacts {
-    width: 90%;
+    width: 81%;
+  }
+  .presentaitonTxt{
+    display: block;
   }
   .man-with-a-tablet1{
     display: inline-block !important;
@@ -297,27 +298,27 @@
 
   }
   .h2Tech{
-    left: 220px;
+    left: 290px;
     margin-top: 120px;
     margin-bottom: 30px;
   }
   .h2Possibilities{
     margin: 180px 0 120px 0;
-    left: 250px;
+    left: 275px;
 
   }
   .h2Portfolio{
-    left: 270px;
+    left: 300px;
     margin-bottom: 75px;
     margin-top: 70px;
   }
   .h2Contacts{
-  left: 345px;
+  left: 400px;
     margin-bottom: 105px;
   }
   .h2About{
     margin: 145px 0 165px;
-    left: 475px;
+    left: 500px;
   }
   .h2RnD{
     margin: 145px 0 165px;
@@ -329,12 +330,12 @@
     margin-top: 250px;
   }
   .h2Industry{
-    left: 245px;
+    left: 300px;
     margin-bottom: 100px;
     margin-top: 150px;
   }
   .h2Integration{
-    left: 430px;
+    left: 480px;
     margin-bottom: 100px;
     margin-top: 150px;
   }
@@ -378,11 +379,11 @@
     display: block!important;;
   }
   .header-desktop{
-    width: 90%;
+    width: 81%;
     margin: 0 auto;
   }
   .section-main{
-    width: 90%;
+    width: 81%;
     margin:0 auto;
   }
   .max-width-container{
@@ -441,9 +442,9 @@
   }
   .section-main-possibilities {
     position: relative;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
-    width: 90%;
+    width: 81%;
     margin: 0 auto;
     img {
       width: 100%;
@@ -455,7 +456,6 @@
       right: 0;
       margin-bottom: 0;
       width: 40%;
-      height: 28%;
       background-color: rgba(43, 55, 62, 0.8);
       display: flex;
       align-items: center;
@@ -476,6 +476,9 @@
       margin: 40px 0 90px;
 
     }
+  }
+  .section-portfolio .right-part p{
+    width: 25%;
   }
   .section-portfolio{
     display: flex;
@@ -498,6 +501,7 @@
           top: 25px;
         }
   }
+
   .mobile-background {
     display: none;
     width: 100%;
@@ -613,8 +617,10 @@
     margin: 0 auto;
   }
   .containerAbout {
+
     width: 95%;
     margin: 0 auto;
+    margin-top:60px;
   }
   .section-main {
     padding-top: 0;
@@ -767,6 +773,9 @@
   }
 }
 @media screen and (min-width: 1400px) {
+  .header-desktop .links-part ul li{
+    font-size: 16px;
+  }
   .desktop-left{
     margin-left: 5%;
   }
