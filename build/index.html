@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/png">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css"/>
 </head>
 <body onscroll="emptyarrow()">
 <div class="max-width-container">
@@ -104,20 +106,22 @@
     </div>
 
 </header>
+<!--
 
     <img style="z-index: 16;" alt="" src="./assets/images/next.svg" onclick="prev()" class="prev carousel-switcher">
     <img style="z-index: 16;" class="carousel-switcher next" onclick="next()" src="./assets/images/next.svg" alt="">
+-->
 
     <div style=" cursor: pointer;" class="arrowTopDiv"></div>
 
 
 <div class="section-main">
-    <div class="h1-container" style="z-index: 16;">
+    <!--<div class="h1-container" style="z-index: 16;">
         <div class="h1-wrapper">
             <h1 class="main-name">ВИДЕОАНАЛИТИКА OMV</h1>
         </div>
         <div class="white-square"></div>
-    </div>
+    </div>-->
         <div class="modal" data-modal="1">
             <div class="modalContent">
             <!--   Svg иконка для закрытия окна  -->
@@ -139,15 +143,23 @@
             <button style="margin-top:15px;" class="sendButton">ОТПРАВИТЬ</button>
         </div>
     <div class="overlay js-overlay-modal"></div>
+    <div class="sl">
+        <div class="sl-slide"><img src="./assets/images/1.jpg" alt=""></div>
+        <div class="sl-slide"><img src="./assets/images/2.jpg" alt=""></div>
+        <div class="sl-slide"><img src="./assets/images/3.jpg" alt=""></div>
+        <div class="sl-slide"><img src="./assets/images/4.jpg" alt=""></div>
+        <div class="sl-slide"><img src="./assets/images/5.jpg" alt=""></div>
+        <div class="sl-slide"><img src="./assets/images/6.jpg" alt=""></div>
+        <div class="sl-slide"><img src="./assets/images/7.jpg" alt=""></div>
+    </div>
 
-
-    <img class="mobile-background animated slideInRight" width="100%" id="slider1" src="./assets/images/1.jpg" alt="">
+ <!--   <img class="mobile-background animated slideInRight" width="100%" id="slider1" src="./assets/images/1.jpg" alt="">
     <img class="mobile-background animated slideInRight" width="100%" id="slider2" src="./assets/images/2.jpg" alt="">
     <img class="mobile-background animated slideInRight" width="100%" id="slider3" src="./assets/images/3.jpg" alt="">
     <img class="mobile-background animated slideInRight" width="100%" id="slider4" src="./assets/images/4.jpg" alt="">
     <img class="mobile-background animated slideInRight" width="100%" id="slider5" src="./assets/images/5.jpg" alt="">
     <img class="mobile-background animated slideInRight" width="100%" id="slider6" src="./assets/images/6.jpg" alt="">
-    <img class="mobile-background animated slideInRight" width="100%"  id="slider7" src="./assets/images/7.jpg" alt="">
+    <img class="mobile-background animated slideInRight" width="100%"  id="slider7" src="./assets/images/7.jpg" alt="">-->
 <!--    <img class="desktop-background" id="slider1" src="./assets/images/carouselD/1.jpg" alt="">
     <img class="desktop-background" id="slider2" src="./assets/images/carouselD/2.jpg" alt="">
     <img class="desktop-background" id="slider3" src="./assets/images/carouselD/3.jpg" alt="">
@@ -156,7 +168,7 @@
     <img class="desktop-background" id="slider6" src="./assets/images/carouselD/6.jpg" alt="">
     <img class="desktop-background" id="slider7"  src="./assets/images/carouselD/7.jpg" alt="">
     <img class="desktop-background"id="slider8"  src="./assets/images/carouselD/8.jpg" alt="">-->
-    <div class="particles">
+    <!--<div class="particles">
         <div onclick="num =0; particleClick()" class="particle"></div>
         <div onclick="num =1; particleClick()" class="particle"></div>
         <div onclick="num =2; particleClick()" class="particle"></div>
@@ -164,13 +176,12 @@
         <div onclick="num =4; particleClick()" class="particle"></div>
         <div onclick="num =5; particleClick()" class="particle"></div>
         <div onclick="num =6; particleClick()" class="particle"></div>
-    </div>
+    </div>-->
 </div>
 
 <div class="section-about" id="section-about">
     <h2 style="display: none;" class="h2-desktop h2About">ОПИСАНИЕ</h2>
     <div class="container">
-
         <div class="main-info">
             <h2 style="margin:25px 0;" class="mobile-only"><span>ОБЩЕЕ </span> ОПИСАНИЕ</h2>
             <div class="left-part">
@@ -527,7 +538,7 @@
 </div>
 <script>
 
-    let firstSlide =  document.getElementsByClassName('mobile-background')[0];
+   /* let firstSlide =  document.getElementsByClassName('mobile-background')[0];
     let secondSlide =  document.getElementsByClassName('mobile-background')[1];
     let thirdSlide =  document.getElementsByClassName('mobile-background')[2];
     let fourthSlide =  document.getElementsByClassName('mobile-background')[3];
@@ -643,7 +654,7 @@
     }
     let slides = [firstSlide, secondSlide, thirdSlide, fourthSlide, fifthSlide, sixthSlide, seventhSlide];
     setInterval(next, 7000);
-
+*/
 
 </script>
 <script
@@ -651,6 +662,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
 <script src="./assets/scripts/modal.js"></script>
+<script type="text/javascript" src="./assets/slick/slick.min.js"></script>
 <script src="./assets/scripts/script.js"></script>
 </body>
 </html>

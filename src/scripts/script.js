@@ -1,3 +1,16 @@
+$(document).ready(function(){
+    $('.sl').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+    });
+});
+
+
 $('.menu-btn').on('click', function(e) {
     e.preventDefault;
     $(this).toggleClass('menu-btn_active');

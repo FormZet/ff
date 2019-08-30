@@ -42,6 +42,12 @@ gulp.task('scripts', function(){
 		.pipe(browserSync.reload({stream: true}));
 })
 
+gulp.task('slick', function(){
+	return gulp.src('./src/slick/*')
+		.pipe(gulp.dest('./build/assets/slick/'))
+		.pipe(browserSync.reload({stream: true}));
+})
+
 gulp.task('compressed-js', function() {
 	return gulp.src('./src/scripts/*.js')
 		.pipe(gulp.dest('build/assets/scripts'))
@@ -70,4 +76,4 @@ gulp.task('browser-sync', function() {
 
 gulp.task('ui', gulp.parallel('watch', 'browser-sync'))
 
-gulp.task('build', gulp.series('clean', 'styles', 'images', 'scripts', 'compressed-js', 'fonts', 'pages', 'ui'));
+gulp.task('build', gulp.series('clean', 'styles', 'images', 'scripts', 'compressed-js', 'fonts', 'slick', 'pages', 'ui'));
