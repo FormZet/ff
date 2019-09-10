@@ -41,7 +41,7 @@
                     </ul>
                     <li><a href="development.html">РАЗРАБОТКА</a></li>
                     <li><a href="portfolio.html">ПОРТФОЛИО</a></li>
-                    <li><a href="#contacts">КОНТАКТЫ</a></li>
+                    <li><a class="cont" href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </div>
         </div>
@@ -66,7 +66,7 @@
                 <li class="link2"><a class="active-link " href="./possibilities.html">ВОЗМОЖНОСТИ</a>
                     <div class="sub-link sub-link1">
                         <a href="./possibilities.html">Технологии</a>
-                        <a href="./possibilities.html">Разработки</a>
+                        <a href="./possibilities.html">Преимущества</a>
                     </div>
                 </li>
                 <li class="link3"><a class="active-link" style="cursor: default" href="#">ПРИМЕНЕНИЕ</a>
@@ -88,11 +88,11 @@
                         <a href="./development.html">R&D</a>
                     </div>
                 </li>
-                <li class="link5"><a class="active-link" href="./portfolio.html">ПОРТФОЛИО</a>
+                <li  class="link5"><a style="text-decoration: underline" class="active-link" href="./portfolio.html">ПОРТФОЛИО</a>
                     <div class="sub-link sub-link4">
-                        <a href="./portfolio.html">Видеоролики</a>
+                        <a href=#videos>Видеоролики</a>
                         <a href="./portfolio.html">Наши заказчики</a>
-                        <a href="./portfolio.html">Дополнительные <br> материалы</a>
+                        <a href="#present">Дополнительные <br> материалы</a>
                     </div>
                 </li>
                 <li><a class="active-link"  href="#contacts">КОНТАКТЫ</a></li>
@@ -101,10 +101,12 @@
     </header>
 
     <div class="section-main-possibilities">
+
         <img class="cars" src="./assets/images/Port.jpg" alt="">
         <div class="short-desc">
             <div class="paragraph">
-                <p><span>ВИДЕОАНАЛИТИКА OMW</span><br>собственная разработка<br>российской иновационной лаборатории OmegaLab
+                <p><span>ВИДЕОАНАЛИТИКА OMW</span><br>собственная разработка<br>
+                    российской иновационной лаборатории OmegaLab
                 </p>
             </div>
         </div>
@@ -117,13 +119,14 @@
             <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
             <img class="head-container__dotts d-head-container__dotts mobile-only" src="" alt="">
         </div>
-        <div class="container videoflex">
+        <h2 style="display: none;" class="h2-desktop h2Vid">ВИДЕОРОЛИКИ</h2>
+        <div id="videos" class="container videoflex">
         <div class="videoCol">
 
             <div id="video_pop" onclick="onPopClick()"></div>
             <div class="vidos">
             <div class="videoBlank"><p>ОПРЕДЕЛЕНИЕ ЧЕЛОВЕК</p></div>
-            <video width="50%" poster="./assets/images/product-bg-5.jpg"
+            <video  poster="./assets/images/product-bg-5.jpg"
                    onclick="onVideoClick1();">
 
             </video>
@@ -132,7 +135,7 @@
                 <div id="video_pop" onclick="onPopClick()"></div>
             <div class="vidos">
                 <div class="videoBlank"><p>ИДЕНТИФИКАЯ ЧЕЛОВЕКА</p></div>
-                <video width="50%" poster="./assets/images/product-bg-5.jpg"
+                <video  poster="./assets/images/product-bg-5.jpg"
                        onclick="onVideoClick2();">
 
                 </video>
@@ -143,7 +146,7 @@
                 <div id="video_pop" onclick="onPopClick()"></div>
                 <div class="vidos">
                     <div class="videoBlank"><p>ИДЕНТИФИКАЯ НА ПРОХОДНОЙ</p></div>
-                    <video width="50%" poster="./assets/images/product-bg-5.jpg"
+                    <video  poster="./assets/images/product-bg-5.jpg"
                            onclick="onVideoClick3();">
 
                     </video>
@@ -152,7 +155,7 @@
                 <div id="video_pop" onclick="onPopClick()"></div>
                 <div class="vidos">
                     <div class="videoBlank"><p>ДЕТЕКТИРОВАНИЕ СПЕЦОДЕЖДЫ</p></div>
-                    <video width="50%" poster="./assets/images/product-bg-5.jpg"
+                    <video  poster="./assets/images/product-bg-5.jpg"
                            onclick="onVideoClick4();">
 
                     </video>
@@ -163,7 +166,7 @@
                 <div id="video_pop" onclick="onPopClick()"></div>
                 <div class="vidos">
                     <div class="videoBlank"><p>ДЕТЕКТИРОВАНИЕ ПЕРИМЕТРА</p></div>
-                    <video width="50%" poster="./assets/images/product-bg-5.jpg"
+                    <video  poster="./assets/images/product-bg-5.jpg"
                            onclick="onVideoClick5();">
 
                     </video>
@@ -172,7 +175,7 @@
                 <div id="video_pop" onclick="onPopClick()"></div>
                 <div class="vidos">
                     <div class="videoBlank"><p>ДЕТЕКТИРОВАНИЕ ОБЪЕКТОВ</p></div>
-                    <video width="50%" poster="./assets/images/product-bg-5.jpg"
+                    <video  poster="./assets/images/product-bg-5.jpg"
                            onclick="onVideoClick6();">
 
                     </video>
@@ -183,7 +186,7 @@
                 <div id="video_pop" onclick="onPopClick()"></div>
                 <div class="vidos">
                     <div class="videoBlank"><p>ДЕТЕКТИРОВАНИЕ АВТОМОБИЛЕЙ</p></div>
-                    <video width="50%" poster="./assets/images/product-bg-5.jpg"
+                    <video  poster="./assets/images/product-bg-5.jpg"
                            onclick="onVideoClick7();">
 
                     </video>
@@ -192,7 +195,7 @@
                 <div id="video_pop" onclick="onPopClick()"></div>
                 <div class="vidos">
                     <div class="videoBlank"><p>ДЕТЕКТОР ДВИЖЕНИЙ</p></div>
-                    <video width="50%" poster="./assets/images/product-bg-5.jpg"
+                    <video  poster="./assets/images/product-bg-5.jpg"
                            onclick="onVideoClick8();">
 
                     </video>
@@ -228,14 +231,16 @@
             <img class="head-container__dotts m-head-container__dotts " src="./assets/images/dotts.svg" alt="">
             <img class="head-container__dotts d-head-container__dotts mobile-only" src="" alt="">
         </div>
-        <div class="presentation" style="margin-bottom: 15px; position: relative">
-
-            <img src="./assets/images/port2.jpg" class="presentaionImg">
-            <a href="./assets/images/materials.rar" style="cursor: pointer;" download ><img src="./assets/images/arrow-present.png" class="arrowdownload"></a>
+        <div class="container">
+        <div id="present" class="presentation" style="margin-bottom: 15px; position: relative">
+            <h2 style="display: none;" class="h2-desktop h2Pres">ПРЕЗЕНТАЦИИ</h2>
+            <img src="./assets/images/port2.jpg" class="PresentationImg" style="width: 100%">
+            <a href="./assets/images/materials.rar" style="cursor: pointer;" download ><img src="./assets/images/arr.jpg" class="arrowdownload"></a>
             <div class="presentaitonTxt"><p>Демонстрационные презентации,
                 которые<br>смогут подробнеерассказать Вам об OMV</p></div>
             <div class="presentaionText videoBlank mobile-only"><p>Демонстрационные презентации,<br>
             которые смогут подробнее<br> рассказать Вам об OMV</p></div>
+        </div>
         </div>
     </div>
 

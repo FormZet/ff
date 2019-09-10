@@ -44,7 +44,7 @@
                 </ul>
                 <li><a href="development.html">РАЗРАБОТКА</a></li>
                 <li><a href="portfolio.html">ПОРТФОЛИО</a></li>
-                <li><a href="#contacts">КОНТАКТЫ</a></li>
+                <li><a class="cont" href="#contacts">КОНТАКТЫ</a></li>
             </ul>
         </div>
     </div>
@@ -72,7 +72,7 @@
             <li class="link2"><a class="active-link " href="./possibilities.html">ВОЗМОЖНОСТИ</a>
                 <div class="sub-link sub-link1">
                     <a href="./possibilities.html">Технологии</a>
-                    <a href="./possibilities.html">Разработки</a>
+                    <a href="./possibilities.html">Преимущества</a>
                 </div>
             </li>
             <li class="link3"><a class="active-link" style="cursor: default" href="#">ПРИМЕНЕНИЕ</a>
@@ -112,10 +112,10 @@
     <img style="z-index: 16;" class="carousel-switcher next" onclick="next()" src="./assets/images/next.svg" alt="">
 -->
 
-    <div style=" cursor: pointer;" class="arrowTopDiv"></div>
+    <a href="#main"><div style=" cursor: pointer;" class="arrowTopDiv" ></div></a>
 
 
-<div class="section-main">
+<div class="section-main" id="main">
     <!--<div class="h1-container" style="z-index: 16;">
         <div class="h1-wrapper">
             <h1 class="main-name">ВИДЕОАНАЛИТИКА OMV</h1>
@@ -253,10 +253,14 @@
                 <div class="card">
                     Работа при слабом освещении
                 </div>
-                <div class="card" style="opacity: 0;"></div>
+                <div class="card" style="opacity: 0; height: 15px;"></div>
             </div>
         </div>
-        <div class="btn-learn-more modules-powers-btn">ПОДРОБНЕЕ</div>
+
+        <div class="posibmore" style="display: flex; justify-content: center;">
+            <div style="margin:0 !important;" class="btn-learn-more possibilities-btnin">ПОДРОБНЕЕ</div>
+        </div>
+        <div class="card" style="opacity: 0; height: 15px;"></div>
         <div class="platform-powers">
             <h2 class="desktop-left" style="margin-bottom: 35px;">ВОЗМОЖНОСТИ <br> ПЛАТФОРМЫ</h2>
             <img class="dotted-image mobile-only" src="./assets/images/compas.svg" alt="">
@@ -347,7 +351,7 @@
                 <div class="bar"><p>Ритейл</p></div>
             </a>
             </div>
-            <div class="product ">
+            <div class="product productnone" style="display: none;">
             </div>
         </div>
     </div>
@@ -422,7 +426,9 @@
                 <p>Подсчет автотранспорта</p>
             </div>
         </div>
-        <div class="btn-learn-more possibilities-btn">ПОДРОБНЕЕ</div>
+        <div class="posibmore" style="display: flex; justify-content: center; margin-bottom: 25px;">
+        <div style="margin:0 !important;" class="btn-learn-more possibilities-btnin">ПОДРОБНЕЕ</div>
+        </div>
     </div>
 </div>
     <div class="container">
@@ -450,7 +456,7 @@
         </div>
         <div class="right-part">
 
-            <p>НАШИ ЗАКАЗЧИКИ</p>
+            <!--<p>НАШИ ЗАКАЗЧИКИ</p>
             <div class="right-part__image-container">
                 <img src="./assets/images/huawei.png" alt="">
                 <img src="./assets/images/huawei.png" alt="">
@@ -461,9 +467,9 @@
                 <img src="./assets/images/huawei.png" alt="">
                 <img src="./assets/images/huawei.png" alt="">
                 <img src="./assets/images/huawei.png" alt="">
-            </div>
+            </div>-->
         </div>
-            <img class="dottsportfolio" style="position: absolute; top: 400px; right: -30px; margin-top: 50px; width: 40%" src="../assets/images/points.svg">
+            <img class="dottsportfolio" style="position: absolute; top: 400px; right: 0px; margin-top: 50px; width: 40%" src="../assets/images/points.svg">
     </div>
 </div>
 

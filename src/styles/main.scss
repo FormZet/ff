@@ -42,7 +42,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, .5);
-  z-index: 20;
+  z-index: 100;
   transition: .3s all;
 }
 
@@ -66,17 +66,17 @@ body {
   visibility: hidden;
 
 
+  width: 95%;
+  max-width: 400px;
+  max-height: 1000px;
 
-  width: 400px;
-  max-width: 500px;
-  height: 600px;
 
 
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30;
+  z-index: 300;
 
 
   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
@@ -106,7 +106,9 @@ body {
   fill: #444;
   cursor: pointer;
 }
-
+.usage-now{
+  text-decoration: underline !important;
+}
 .modal{
 
 
@@ -132,8 +134,9 @@ body {
   }
 }
 .basement{
-  margin-top: 150px;
+  margin-top: 70px;
 }
+
 .integrationStart{
   height: 15px;
   width:90%;
@@ -150,7 +153,8 @@ body {
   border:none;
 }
 .checked{
-  width: 25%;
+  width: 35%;
+  margin: 0 auto;
 }
 
 

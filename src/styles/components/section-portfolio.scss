@@ -103,13 +103,14 @@
         display: flex;
         flex-direction: column;
 
+
       }
 
 }
 .videoCol{
   margin-top: 30px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100vh;
 
 }
@@ -139,28 +140,34 @@ margin: 0 auto;
 
 }
 .videoBlank{
+  margin-bottom: -50px;
   height: 50px;
-  width: 50%;
+  min-height: 50px;
+  width: 100%;
   background-color: #58666e;
   opacity: 0.96;
       p{
-        margin-top: 8px !important;
         text-align: center;
         color: white;
       }
 }
 .vidos{
   align-items: center;
+  width: 90%;
   margin-bottom: 30px;
 }
+video{
+  width: 100%;
+}
 .presentation{
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .presentaionImg {
-  width: 100%;
+
 }
 .presentaionText{
   padding-top: 10px;
@@ -193,8 +200,8 @@ margin: 0 auto;
 .presentaitonTxt{
   position: absolute;
   display: none;
-  top:79.5%;
-  left:5%;
+  bottom: 0;
+  left:0;
   width: 41.5%;
   text-align: left;
   background-color: rgba(57, 59, 67, 0.8) !important;
