@@ -68,6 +68,10 @@
   .dottsportfolio{
     display: none;
   }
+  .head-container{
+    margin-bottom: 100px;
+
+  }
   .right-part {
     background-color: #FFFFFF;
     padding: 20px 0;
@@ -112,6 +116,7 @@
   align-items: center;
   justify-content: space-around;
   height: 100vh;
+  margin-bottom: 80px;
 
 }
 iframe{
@@ -179,7 +184,6 @@ video{
   align-items: center;
   overflow: hidden;
   justify-content: space-between;
-  margin-bottom: 20px;
   &__dotts {
     width: 25%;
   }
